@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://messai.io/schemas/mp-material.schema.json",
+  "title": "MESS Materials — DFT-Computed Properties",
+  "description": "JSON Schema for data/mp-materials-rich.json — one record per MESS-Parameters material slug, carrying DFT-computed properties fetched from the Materials Project and derived with pymatgen. Consumed by messai-ai's generate-material-fixtures.ts and rendered on the parameter detail page alongside literature narrative.",
+  "type": "object",
+  "definitions": {
+    "mpFunctional": {
+      "type": "string",
+      "enum": ["PBE", "PBE+U", "r2SCAN", "SCAN", "HSE06"],
+      "description": "DFT exchange-correlation functional used for this field. r2SCAN preferred for transition-metal oxides; PBE is the default MP dataset."
+    },
+    "confidenceTier": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "high = direct crystalline MP match for the slug; medium = composite with all component MP matches; low = amorphous-proxy or partial mapping (e.g. carbon fabric → graphite mp-48)."
+    },
+    "pourbaixState": {
+      "type": "string",
+      "enum": ["stable", "passivated", "corroding", "unknown"],
+      "description": "stable = thermodynamic stable phase; passivated = corrodes kinetically but forms a protective oxide layer (Ti, Al, Cr, Ni overrides); corroding = thermodynamically unstable with no known passivation; unknown = Pourbaix diagram unavailable."
+    },
+    "pourbaixResult": {
+      "type": "object",
+      "required": ["state"],
+      "additionalProperties": false,
+      "properties": {
+        "state": { "$ref": "#/definitions/pourbaixState" },
+        "stable_phase": {
+          "type": ["string", "null"],
+          "description": "Formula of the thermodynamically stable phase at this (E, pH) point. Null if the material itself is stable."
+        },
+        "decomposition_energy_eV": {
+          "type": ["number", "null"],
+          "description": "Energy above the Pourbaix hull (eV/atom). 0 = stable. Higher = more unstable."
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "description": "Free-form caveats, e.g. 'passivator override applied (Ti → TiO2 stable)'."
+        }
+      }
+    },
+    "component": {
+      "type": "object",
+      "required": ["mp_id", "role"],
+      "additionalProperties": false,
+      "properties": {
+        "mp_id": {
+          "type": "string",
+          "pattern": "^mp-[0-9]+$",
+          "description": "Materials Project material ID, e.g. mp-48 (graphite), mp-126 (Pt), mp-510408 (β-MnO2)."
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "bulk_structure",
+            "catalyst",
+            "support",
+            "coating",
+            "dopant",
+            "matrix",
+            "filler"
+          ],
+          "description": "How this component is used in the composite material."
+        },
+        "loading": {
+          "type": ["string", "null"],
+          "description": "Mass or volume fraction if known, e.g. '10 wt%'. Null if unspecified."
+        },
+        "proxy": {
+          "type": "boolean",
+          "default": false,
+          "description": "True when this MP structure is a crystalline proxy for an amorphous or disordered material (e.g. graphite proxying for carbon cloth)."
+        },
+        "formula": {
+          "type": ["string", "null"],
+          "description": "Reduced formula, e.g. 'C', 'Pt', 'MnO2'. Populated from MP summary API."
+        }
+      }
+    },
+    "mpMaterial": {
+      "type": "object",
+      "required": [
+        "slug",
+        "components",
+        "confidence_tier",
+        "mp_snapshot_date"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string",
+          "description": "MESS-Parameters material slug. Join key across MESS-Parameters and MESS-Materials."
+        },
+        "components": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/component" }
+        },
+        "confidence_tier": { "$ref": "#/definitions/confidenceTier" },
+        "mp_snapshot_date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date of the Materials Project database snapshot this record was fetched from (for reproducibility)."
+        },
+        "mp_functional_default": {
+          "$ref": "#/definitions/mpFunctional",
+          "description": "The functional used for the primary component's summary fields. Individual fields may override via per-field *_functional suffixes in future versions."
+        },
+        "band_gap_eV": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "DFT-computed band gap in eV. 0 for metals. Null if not computed for any component (e.g. composite with mixed functionals)."
+        },
+        "is_metal": {
+          "type": ["boolean", "null"],
+          "description": "True when band_gap_eV < 0.01. Primary proxy for electrical conductivity."
+        },
+        "formation_energy_eV_per_atom": {
+          "type": ["number", "null"],
+          "description": "Weighted average across components. Negative = thermodynamically favorable."
+        },
+        "energy_above_hull_eV_per_atom": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "description": "Weighted average. 0 = ground-state stable phase. >0.05 = metastable; >0.1 = unlikely to survive long-term aqueous exposure."
+        },
+        "density_g_per_cm3": {
+          "type": ["number", "null"],
+          "minimum": 0
+        },
+        "total_magnetization_uB": {
+          "type": ["number", "null"],
+          "description": "Total magnetic moment per unit cell in Bohr magnetons. Relevant for magnetic-field effects on biofilm behavior (underexplored in MES literature)."
+        },
+        "pourbaix": {
+          "type": "object",
+          "required": ["mfc_anode", "mfc_cathode", "mec_cathode"],
+          "additionalProperties": false,
+          "properties": {
+            "mfc_anode": {
+              "$ref": "#/definitions/pourbaixResult",
+              "description": "Stability at (-0.3 V vs SHE, pH 7)."
+            },
+            "mfc_cathode": {
+              "$ref": "#/definitions/pourbaixResult",
+              "description": "Stability at (+0.2 V vs SHE, pH 7)."
+            },
+            "mec_cathode": {
+              "$ref": "#/definitions/pourbaixResult",
+              "description": "Stability at (-0.7 V vs SHE, pH 7)."
+            }
+          }
+        },
+        "structure_cif": {
+          "type": ["string", "null"],
+          "description": "Primary component's crystal structure as CIF text. Reserved for MLIP feature extraction in v0.3+."
+        },
+        "notes": {
+          "type": ["string", "null"],
+          "description": "Free-form producer-side caveats not captured by confidence_tier (e.g. 'MnO2 beta-phase used; alpha-phase would yield different Pourbaix result')."
+        }
+      }
+    }
+  },
+  "required": ["schema_version", "generated_at", "materials"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "mess_parameters_tag": {
+      "type": "string",
+      "description": "The MESS-Parameters tag whose slug vocabulary this dataset was generated against, e.g. 'v0.2.0'."
+    },
+    "materials": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/mpMaterial" }
+    }
+  }
+}

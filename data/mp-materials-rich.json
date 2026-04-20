@@ -1,6 +1,6 @@
 {
   "schema_version": "0.2.0",
-  "generated_at": "2026-04-20T04:22:18.370981+00:00",
+  "generated_at": "2026-04-20T04:26:52.789649+00:00",
   "mess_parameters_tag": "sha:0aaca53",
   "materials": [
     {
@@ -60,6 +60,24 @@
         "shape_factor": 5.084893456998606,
         "has_reconstructed": true,
         "source_functional": "PBE"
+      },
+      "paper_cross_reference": {
+        "paper_count": 303,
+        "year_range": [
+          2000,
+          2026
+        ],
+        "system_type_distribution": {
+          "MFC": 192,
+          "MES": 23,
+          "BES": 46,
+          "MEC": 38,
+          "MDC": 4
+        },
+        "power_output_median_mW_per_m2": 6730.0,
+        "power_output_n": 15,
+        "efficiency_median_pct": 5.0,
+        "efficiency_n": 23
       },
       "notes": "Benchmark noble-metal cathode; thermodynamically stable across all MES operating conditions."
     },
@@ -121,6 +139,24 @@
         "has_reconstructed": false,
         "source_functional": "PBE"
       },
+      "paper_cross_reference": {
+        "paper_count": 390,
+        "year_range": [
+          2001,
+          2025
+        ],
+        "system_type_distribution": {
+          "MFC": 246,
+          "BES": 63,
+          "MES": 30,
+          "MEC": 47,
+          "MDC": 4
+        },
+        "power_output_median_mW_per_m2": 46000.0,
+        "power_output_n": 17,
+        "efficiency_median_pct": 5.41,
+        "efficiency_n": 29
+      },
       "notes": "Copper is biocidal in dissolved form \u2014 flag for biofilm compatibility in BCS."
     },
     {
@@ -180,6 +216,24 @@
         "shape_factor": 5.177499570474934,
         "has_reconstructed": false,
         "source_functional": "PBE"
+      },
+      "paper_cross_reference": {
+        "paper_count": 728,
+        "year_range": [
+          2000,
+          2025
+        ],
+        "system_type_distribution": {
+          "MFC": 476,
+          "MEC": 95,
+          "MES": 37,
+          "BES": 115,
+          "MDC": 5
+        },
+        "power_output_median_mW_per_m2": 12360.0,
+        "power_output_n": 23,
+        "efficiency_median_pct": 7.0,
+        "efficiency_n": 41
       },
       "notes": "Foam morphology not captured by crystalline Ni; use only the bulk chemistry + passivator behavior. Porosity lives in MESS-Parameters measurements."
     },
@@ -241,6 +295,22 @@
         "has_reconstructed": false,
         "source_functional": "PBE"
       },
+      "paper_cross_reference": {
+        "paper_count": 12,
+        "year_range": [
+          2010,
+          2024
+        ],
+        "system_type_distribution": {
+          "MFC": 6,
+          "MEC": 3,
+          "BES": 3
+        },
+        "power_output_median_mW_per_m2": null,
+        "power_output_n": 0,
+        "efficiency_median_pct": null,
+        "efficiency_n": 0
+      },
       "notes": "Stainless is an Fe-Cr-Ni alloy; MP has no alloy composition exactly matching common SS grades (304, 316). Using Fe with passivator override captures the practical corrosion behavior. Refine with specific alloys in v0.2+."
     },
     {
@@ -286,6 +356,20 @@
       "structure_cif": "# generated using pymatgen\ndata_MnO2\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.85469766\n_cell_length_b   7.01576424\n_cell_length_c   7.01953963\n_cell_angle_alpha   87.57534312\n_cell_angle_beta   78.26880630\n_cell_angle_gamma   78.25214817\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   MnO2\n_chemical_formula_sum   'Mn4 O8'\n_cell_volume   134.76660221\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Mn  Mn0  1  0.65155204  0.18203102  0.51786946  1\n  Mn  Mn1  1  0.16804623  0.48550696  0.18212972  1\n  Mn  Mn2  1  0.83274373  0.51734630  0.82091119  1\n  Mn  Mn3  1  0.34951250  0.82079611  0.48529819  1\n  O  O4  1  0.83716519  0.70747424  0.62277073  1\n  O  O5  1  0.45806578  0.37951197  0.70828811  1\n  O  O6  1  0.54292522  0.62333355  0.29478472  1\n  O  O7  1  0.16393066  0.29542335  0.38037727  1\n  O  O8  1  0.15608275  0.04887425  0.64306196  1\n  O  O9  1  0.79731915  0.35998702  0.04946720  1\n  O  O10  1  0.84509788  0.95399027  0.36012846  1\n  O  O11  1  0.20373986  0.64288495  0.95357498  1\n",
       "elasticity": null,
       "surface": null,
+      "paper_cross_reference": {
+        "paper_count": 2,
+        "year_range": [
+          2011,
+          2020
+        ],
+        "system_type_distribution": {
+          "MFC": 2
+        },
+        "power_output_median_mW_per_m2": null,
+        "power_output_n": 0,
+        "efficiency_median_pct": null,
+        "efficiency_n": 0
+      },
       "notes": "MES literature usually reports MnO2 without phase specification. \u03b2-MnO2 is the default; \u03b1- and \u03b3-phases would give different Pourbaix signatures. Flag phase ambiguity."
     },
     {
@@ -331,6 +415,24 @@
       "structure_cif": "# generated using pymatgen\ndata_Fe3O4\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   5.97179853\n_cell_length_b   5.97028597\n_cell_length_c   5.97006760\n_cell_angle_alpha   60.01949761\n_cell_angle_beta   59.99471754\n_cell_angle_gamma   59.99050118\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Fe3O4\n_chemical_formula_sum   'Fe6 O8'\n_cell_volume   150.51505689\n_cell_formula_units_Z   2\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Fe  Fe0  1  0.87486095  0.87520887  0.87514198  1\n  Fe  Fe1  1  0.00003858  0.50002372  0.49986910  1\n  Fe  Fe2  1  0.49975642  0.50027536  0.50007724  1\n  Fe  Fe3  1  0.12485791  0.12520719  0.12513777  1\n  Fe  Fe4  1  0.49994434  0.00008791  0.50023870  1\n  Fe  Fe5  1  0.50012994  0.49994507  0.99995687  1\n  O  O6  1  0.74366390  0.74325511  0.26918542  1\n  O  O7  1  0.73084474  0.25610164  0.25633043  1\n  O  O8  1  0.25678137  0.25611405  0.25624534  1\n  O  O9  1  0.26904047  0.74363617  0.74363374  1\n  O  O10  1  0.25623964  0.73108131  0.25626586  1\n  O  O11  1  0.74374174  0.74358169  0.74374672  1\n  O  O12  1  0.25635678  0.25630637  0.73097179  1\n  O  O13  1  0.74374521  0.26917553  0.74319803  1\n",
       "elasticity": null,
       "surface": null,
+      "paper_cross_reference": {
+        "paper_count": 556,
+        "year_range": [
+          2000,
+          2025
+        ],
+        "system_type_distribution": {
+          "MFC": 363,
+          "MES": 37,
+          "BES": 85,
+          "MEC": 67,
+          "MDC": 4
+        },
+        "power_output_median_mW_per_m2": 10230.0,
+        "power_output_n": 21,
+        "efficiency_median_pct": 7.0,
+        "efficiency_n": 37
+      },
       "notes": "Magnetite chosen over hematite (Fe2O3, mp-19770) because it is semi-metallic at room temperature and dominant in MES applications. Hematite coverage is a v0.2 refinement."
     },
     {
@@ -376,6 +478,7 @@
       "structure_cif": "# generated using pymatgen\ndata_Co3O4\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   5.68925857\n_cell_length_b   5.68929319\n_cell_length_c   5.68933027\n_cell_angle_alpha   60.00005078\n_cell_angle_beta   59.99996802\n_cell_angle_gamma   59.99957933\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Co3O4\n_chemical_formula_sum   'Co6 O8'\n_cell_volume   130.21434052\n_cell_formula_units_Z   2\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Co  Co0  1  0.50000008  -0.00000206  0.50000088  1\n  Co  Co1  1  -0.00000248  0.50000185  0.50000021  1\n  Co  Co2  1  0.50000020  0.49999800  0.00000166  1\n  Co  Co3  1  0.50000016  0.49999795  0.50000010  1\n  Co  Co4  1  0.12502789  0.12501989  0.12497272  1\n  Co  Co5  1  0.87498812  0.87500117  0.87500857  1\n  O  O6  1  0.73694323  0.73694607  0.73694738  1\n  O  O7  1  0.26304946  0.26305027  0.71084299  1\n  O  O8  1  0.26304724  0.71084215  0.26305423  1\n  O  O9  1  0.71084929  0.26304177  0.26305412  1\n  O  O10  1  0.73694554  0.28916363  0.73694642  1\n  O  O11  1  0.28916224  0.73694312  0.73694761  1\n  O  O12  1  0.26304768  0.26305023  0.26305509  1\n  O  O13  1  0.73694137  0.73694596  0.28916704  1\n",
       "elasticity": null,
       "surface": null,
+      "paper_cross_reference": null,
       "notes": null
     },
     {
@@ -435,6 +538,21 @@
         "shape_factor": 72.51049744764661,
         "has_reconstructed": false,
         "source_functional": "PBE"
+      },
+      "paper_cross_reference": {
+        "paper_count": 13,
+        "year_range": [
+          2010,
+          2024
+        ],
+        "system_type_distribution": {
+          "MFC": 12,
+          "BES": 1
+        },
+        "power_output_median_mW_per_m2": null,
+        "power_output_n": 0,
+        "efficiency_median_pct": null,
+        "efficiency_n": 1
       },
       "notes": "Amorphous/partially-ordered carbon fabric. EVS/LSS low-confidence; differentiate via surface-treatment parameters in MESS-Parameters."
     },
@@ -496,6 +614,22 @@
         "has_reconstructed": false,
         "source_functional": "PBE"
       },
+      "paper_cross_reference": {
+        "paper_count": 12,
+        "year_range": [
+          2006,
+          2024
+        ],
+        "system_type_distribution": {
+          "MFC": 10,
+          "MEC": 1,
+          "BES": 1
+        },
+        "power_output_median_mW_per_m2": null,
+        "power_output_n": 1,
+        "efficiency_median_pct": null,
+        "efficiency_n": 1
+      },
       "notes": "Same proxy caveat as carbon_cloth. Higher porosity than cloth \u2014 structural difference not captured by DFT."
     },
     {
@@ -555,6 +689,20 @@
         "shape_factor": 72.51049744764661,
         "has_reconstructed": false,
         "source_functional": "PBE"
+      },
+      "paper_cross_reference": {
+        "paper_count": 2,
+        "year_range": [
+          2004,
+          2014
+        ],
+        "system_type_distribution": {
+          "MFC": 2
+        },
+        "power_output_median_mW_per_m2": null,
+        "power_output_n": 1,
+        "efficiency_median_pct": null,
+        "efficiency_n": 0
       },
       "notes": "Same proxy caveat as carbon_cloth."
     },
@@ -616,6 +764,24 @@
         "has_reconstructed": false,
         "source_functional": "PBE"
       },
+      "paper_cross_reference": {
+        "paper_count": 48,
+        "year_range": [
+          2000,
+          2025
+        ],
+        "system_type_distribution": {
+          "MFC": 35,
+          "BES": 7,
+          "MDC": 1,
+          "MEC": 4,
+          "MES": 1
+        },
+        "power_output_median_mW_per_m2": null,
+        "power_output_n": 1,
+        "efficiency_median_pct": 4.35,
+        "efficiency_n": 6
+      },
       "notes": "Actually graphitic, unlike the fabric forms. Confidence downgraded only by morphology uncertainty, not chemistry."
     },
     {
@@ -675,6 +841,23 @@
         "shape_factor": 72.51049744764661,
         "has_reconstructed": false,
         "source_functional": "PBE"
+      },
+      "paper_cross_reference": {
+        "paper_count": 12,
+        "year_range": [
+          2001,
+          2019
+        ],
+        "system_type_distribution": {
+          "BES": 2,
+          "MFC": 6,
+          "MEC": 3,
+          "MES": 1
+        },
+        "power_output_median_mW_per_m2": null,
+        "power_output_n": 0,
+        "efficiency_median_pct": null,
+        "efficiency_n": 2
       },
       "notes": "Amorphous + micropore-dominated surface area; DFT on graphite misses both. Treat EVS as chemistry-floor only; expect surface-area driven performance to dominate in practice."
     },
@@ -736,6 +919,23 @@
         "has_reconstructed": false,
         "source_functional": "PBE"
       },
+      "paper_cross_reference": {
+        "paper_count": 110,
+        "year_range": [
+          2002,
+          2024
+        ],
+        "system_type_distribution": {
+          "MFC": 74,
+          "MEC": 19,
+          "BES": 16,
+          "MES": 1
+        },
+        "power_output_median_mW_per_m2": null,
+        "power_output_n": 1,
+        "efficiency_median_pct": null,
+        "efficiency_n": 0
+      },
       "notes": "MP has no canonical SWNT/MWNT entry; graphite is the standard approximation. Real CNT properties depend on chirality and diameter \u2014 document in SCIENTIFIC_INTEGRITY.md."
     },
     {
@@ -795,6 +995,24 @@
         "shape_factor": 72.51049744764661,
         "has_reconstructed": false,
         "source_functional": "PBE"
+      },
+      "paper_cross_reference": {
+        "paper_count": 164,
+        "year_range": [
+          2001,
+          2025
+        ],
+        "system_type_distribution": {
+          "MFC": 110,
+          "MES": 13,
+          "MEC": 19,
+          "MDC": 1,
+          "BES": 21
+        },
+        "power_output_median_mW_per_m2": 3000.0,
+        "power_output_n": 3,
+        "efficiency_median_pct": 24.38,
+        "efficiency_n": 5
       },
       "notes": "Oxygen functionalization radically changes properties; crystalline graphite is a weak proxy. Mark low-confidence explicitly."
     },
@@ -856,6 +1074,7 @@
         "has_reconstructed": false,
         "source_functional": "PBE"
       },
+      "paper_cross_reference": null,
       "notes": "Typically carbon cloth + PTFE binder. Carbon-side chemistry only."
     }
   ]

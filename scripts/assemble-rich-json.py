@@ -43,6 +43,7 @@ from _common import (
 
 SLUG_MAP_PATH = DATA_DIR / "slug-to-mp.yaml"
 POURBAIX_PATH = DATA_DIR / "pourbaix-results.json"
+CROSSREF_PATH = DATA_DIR / "material-paper-crossref.json"
 RICH_OUTPUT = DATA_DIR / "mp-materials-rich.json"
 LOCK_OUTPUT = DATA_DIR / "mess-parameters-lock.json"
 UNMAPPED_OUTPUT = DATA_DIR / "unmapped-materials.json"
@@ -128,6 +129,30 @@ def build_elasticity_block(mp_id: str) -> dict | None:
     }
 
 
+def build_paper_xref_block(slug: str, crossref_all: dict) -> dict | None:
+    """Compact per-slug summary pulled from material-paper-crossref.json.
+
+    The full paper list (up to 100 per slug) stays in the standalone
+    crossref file so rich.json doesn't balloon. rich.json gets only
+    scalars that downstream UI needs for the "N papers used this
+    material" headline.
+    """
+    per_slug = crossref_all.get("per_slug", {}).get(slug)
+    if not per_slug:
+        return None
+    pwr = per_slug.get("power_output_summary") or {}
+    eff = per_slug.get("efficiency_summary") or {}
+    return {
+        "paper_count": per_slug.get("paper_count", 0),
+        "year_range": per_slug.get("year_range"),
+        "system_type_distribution": per_slug.get("system_type_distribution", {}),
+        "power_output_median_mW_per_m2": pwr.get("median") if pwr.get("n", 0) >= 3 else None,
+        "power_output_n": pwr.get("n", 0),
+        "efficiency_median_pct": eff.get("median") if eff.get("n", 0) >= 3 else None,
+        "efficiency_n": eff.get("n", 0),
+    }
+
+
 def build_surface_block(mp_id: str) -> dict | None:
     """Translate raw MP surface-properties doc → schema-shaped surface block."""
     raw = load_optional_cache(SURFACES_CACHE, mp_id)
@@ -172,7 +197,7 @@ def parse_loading(loading: str | None) -> float:
         return 1.0
 
 
-def assemble_material(entry: dict, pourbaix_all: dict) -> dict:
+def assemble_material(entry: dict, pourbaix_all: dict, crossref_all: dict) -> dict:
     slug = entry["slug"]
     components_yaml = entry.get("components") or []
     if not components_yaml:
@@ -278,6 +303,7 @@ def assemble_material(entry: dict, pourbaix_all: dict) -> dict:
         "structure_cif": primary_cif,
         "elasticity": build_elasticity_block(primary_mp_id),
         "surface": build_surface_block(primary_mp_id),
+        "paper_cross_reference": build_paper_xref_block(slug, crossref_all),
         "notes": entry.get("notes"),
     }
 
@@ -290,11 +316,14 @@ def main() -> None:
     pourbaix_all = (
         json.loads(POURBAIX_PATH.read_text(encoding="utf-8")) if POURBAIX_PATH.exists() else {"materials": {}}
     )
+    crossref_all = (
+        json.loads(CROSSREF_PATH.read_text(encoding="utf-8")) if CROSSREF_PATH.exists() else {"per_slug": {}}
+    )
 
     mapped_materials = []
     mapped_slugs: set[str] = set()
     for entry in slug_map.get("materials", []):
-        record = assemble_material(entry, pourbaix_all)
+        record = assemble_material(entry, pourbaix_all, crossref_all)
         mapped_materials.append(record)
         mapped_slugs.add(record["slug"])
 

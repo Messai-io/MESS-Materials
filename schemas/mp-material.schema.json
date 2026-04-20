@@ -39,6 +39,43 @@
         }
       }
     },
+    "paperCrossReference": {
+      "type": "object",
+      "description": "Compact summary of papers in the MESS-Parameters corpus that report using this material. Full paper list (up to 100 per slug) lives in data/material-paper-crossref.json.",
+      "additionalProperties": false,
+      "properties": {
+        "paper_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "year_range": {
+          "type": ["array", "null"],
+          "items": { "type": "integer" },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "system_type_distribution": {
+          "type": "object",
+          "additionalProperties": { "type": "integer" },
+          "description": "Count of papers per MES system type (MFC, MEC, MDC, ...)."
+        },
+        "power_output_median_mW_per_m2": {
+          "type": ["number", "null"],
+          "description": "Median across papers that reported power. Null if n<3 (too few samples for a stable median)."
+        },
+        "power_output_n": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "efficiency_median_pct": {
+          "type": ["number", "null"]
+        },
+        "efficiency_n": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
     "surface": {
       "type": "object",
       "description": "DFT-computed surface properties. From MP's surface_properties collection (~1k materials; null for the rest).",
@@ -232,6 +269,13 @@
             { "type": "null" }
           ],
           "description": "Null when MP has no surface-properties entry for the primary component (more common than elasticity gaps)."
+        },
+        "paper_cross_reference": {
+          "oneOf": [
+            { "$ref": "#/definitions/paperCrossReference" },
+            { "type": "null" }
+          ],
+          "description": "Null when no papers in the pinned MESS-Parameters corpus report this material. Novel MES-specific capability — surface area no other DFT database reaches."
         },
         "notes": {
           "type": ["string", "null"],

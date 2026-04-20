@@ -1,0 +1,225 @@
+{
+  "surfaces": [
+    {
+      "miller_index": [
+        1,
+        1,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.10489738563478822,
+      "surface_energy": 1.6806413246933838,
+      "is_reconstructed": true,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.81171819\n_cell_length_b   7.95260400\n_cell_length_c   22.49373988\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt14\n_cell_volume   502.97085067\n_cell_formula_units_Z   14\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.000000  -0.010605  0.602391  1\n  Pt  Pt2  1  0.000000  0.500274  0.587211  1\n  Pt  Pt3  1  0.000000  0.491000  0.707123  1\n  Pt  Pt4  1  0.500000  0.237866  0.655633  1\n  Pt  Pt5  1  0.500000  0.746836  0.659788  1\n  Pt  Pt6  1  0.500000  0.238777  0.532796  1\n  Pt  Pt7  1  0.500000  0.757719  0.531117  1\n  Pt  Pt8  1  0.000000  0.003164  0.340212  1\n  Pt  Pt9  1  0.000000  0.512134  0.344367  1\n  Pt  Pt10  1  -0.000000  -0.007719  0.468883  1\n  Pt  Pt11  1  -0.000000  0.511223  0.467204  1\n  Pt  Pt12  1  0.500000  0.249726  0.412789  1\n  Pt  Pt13  1  0.500000  0.760605  0.397609  1\n  Pt  Pt14  1  0.500000  0.259000  0.292877  1\n",
+      "work_function": 5.325113078838299,
+      "efermi": 0.09644056,
+      "area_fraction": 0.046667192862003506,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        1,
+        1,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.1167636429954968,
+      "surface_energy": 1.8707597186759313,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.81171819\n_cell_length_b   3.97630200\n_cell_length_c   22.49373988\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt8\n_cell_volume   251.48542534\n_cell_formula_units_Z   8\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.000000  0.000000  0.873942  1\n  Pt  Pt2  1  0.000000  0.000000  0.994271  1\n  Pt  Pt3  1  0.500000  0.500000  0.941537  1\n  Pt  Pt4  1  0.500000  0.500000  0.812518  1\n  Pt  Pt5  1  0.000000  0.000000  0.620963  1\n  Pt  Pt6  1  0.000000  0.000000  0.749982  1\n  Pt  Pt7  1  0.500000  0.500000  0.688558  1\n  Pt  Pt8  1  0.500000  0.500000  0.568229  1\n",
+      "work_function": 5.191944205008184,
+      "efermi": 0.9612034,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        2,
+        1,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.11003102609305283,
+      "surface_energy": 1.7628913087903761,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   8.89145604\n_cell_length_b   8.89145604\n_cell_length_c   38.94623780\n_cell_angle_alpha   89.99823499\n_cell_angle_beta   89.99823499\n_cell_angle_gamma   78.54528955\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt96\n_cell_volume   3017.68351574\n_cell_formula_units_Z   96\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.500019  0.500115  0.249703  1\n  Pt  Pt2  1  0.415848  0.907288  0.038319  1\n  Pt  Pt3  1  0.911440  0.417272  0.039961  1\n  Pt  Pt4  1  0.835432  0.835012  0.084830  1\n  Pt  Pt5  1  0.989936  0.978879  0.006490  1\n  Pt  Pt6  1  0.335791  0.335907  0.084219  1\n  Pt  Pt7  1  0.254867  0.752779  0.125416  1\n  Pt  Pt8  1  0.751776  0.253047  0.124818  1\n  Pt  Pt9  1  0.668227  0.668309  0.166280  1\n  Pt  Pt10  1  0.168060  0.168180  0.166840  1\n  Pt  Pt11  1  0.083758  0.584438  0.208340  1\n  Pt  Pt12  1  0.584153  0.083390  0.208218  1\n  Pt  Pt13  1  0.667275  0.661441  0.039961  1\n  Pt  Pt14  1  0.585910  0.085790  0.084219  1\n  Pt  Pt15  1  0.085008  0.585433  0.084830  1\n  Pt  Pt16  1  0.002773  0.004870  0.125416  1\n  Pt  Pt17  1  0.157286  0.165847  0.038319  1\n  Pt  Pt18  1  0.503051  0.501772  0.124817  1\n  Pt  Pt19  1  0.418181  0.918065  0.166840  1\n  Pt  Pt20  1  0.918307  0.418222  0.166280  1\n  Pt  Pt21  1  0.834437  0.833765  0.208340  1\n  Pt  Pt22  1  0.333390  0.334147  0.208218  1\n  Pt  Pt23  1  0.228878  0.739938  0.006490  1\n  Pt  Pt24  1  0.750120  0.250015  0.249703  1\n  Pt  Pt25  1  0.387735  0.615619  0.060833  1\n  Pt  Pt26  1  0.296463  0.046464  0.104037  1\n  Pt  Pt27  1  0.790358  0.540356  0.103680  1\n  Pt  Pt28  1  0.709863  0.960910  0.146015  1\n  Pt  Pt29  1  0.865619  0.137733  0.060833  1\n  Pt  Pt30  1  0.210907  0.459860  0.146015  1\n  Pt  Pt31  1  0.126746  0.876753  0.188213  1\n  Pt  Pt32  1  0.625953  0.375947  0.187328  1\n  Pt  Pt33  1  0.542358  0.791736  0.229117  1\n  Pt  Pt34  1  0.041731  0.292352  0.229117  1\n  Pt  Pt35  1  0.948644  0.698647  0.022376  1\n  Pt  Pt36  1  0.447891  0.197888  0.024497  1\n  Pt  Pt37  1  0.625058  0.375055  0.057257  1\n  Pt  Pt38  1  0.542672  0.792642  0.103609  1\n  Pt  Pt39  1  0.042638  0.292668  0.103609  1\n  Pt  Pt40  1  0.961216  0.711221  0.146155  1\n  Pt  Pt41  1  0.129115  0.879117  0.065854  1\n  Pt  Pt42  1  0.460065  0.210059  0.145958  1\n  Pt  Pt43  1  0.375662  0.626927  0.187637  1\n  Pt  Pt44  1  0.876926  0.125661  0.187637  1\n  Pt  Pt45  1  0.792158  0.542154  0.228788  1\n  Pt  Pt46  1  0.291992  0.041996  0.229507  1\n  Pt  Pt47  1  0.204126  0.449624  0.023198  1\n  Pt  Pt48  1  0.699626  0.954127  0.023199  1\n  Pt  Pt49  1  0.521122  0.510065  0.493510  1\n  Pt  Pt50  1  0.416608  0.915852  0.291782  1\n  Pt  Pt51  1  0.915565  0.416237  0.291661  1\n  Pt  Pt52  1  0.831696  0.831777  0.333720  1\n  Pt  Pt53  1  0.999881  0.999981  0.250297  1\n  Pt  Pt54  1  0.331816  0.331934  0.333160  1\n  Pt  Pt55  1  0.246947  0.748228  0.375183  1\n  Pt  Pt56  1  0.747230  0.245128  0.374584  1\n  Pt  Pt57  1  0.664995  0.664565  0.415171  1\n  Pt  Pt58  1  0.164086  0.164209  0.415781  1\n  Pt  Pt59  1  0.082726  0.588561  0.460038  1\n  Pt  Pt60  1  0.592717  0.084153  0.461680  1\n  Pt  Pt61  1  0.666242  0.665565  0.291661  1\n  Pt  Pt62  1  0.581938  0.081816  0.333160  1\n  Pt  Pt63  1  0.081772  0.581695  0.333720  1\n  Pt  Pt64  1  0.998224  0.996952  0.375183  1\n  Pt  Pt65  1  0.165846  0.166608  0.291782  1\n  Pt  Pt66  1  0.495131  0.497225  0.374584  1\n  Pt  Pt67  1  0.414209  0.914090  0.415781  1\n  Pt  Pt68  1  0.914567  0.414992  0.415170  1\n  Pt  Pt69  1  0.838563  0.832728  0.460038  1\n  Pt  Pt70  1  0.334152  0.342714  0.461680  1\n  Pt  Pt71  1  0.249977  0.749886  0.250298  1\n  Pt  Pt72  1  0.760067  0.271121  0.493509  1\n  Pt  Pt73  1  0.374336  0.623075  0.312364  1\n  Pt  Pt74  1  0.289933  0.039938  0.354042  1\n  Pt  Pt75  1  0.788785  0.538781  0.353845  1\n  Pt  Pt76  1  0.707365  0.957328  0.396391  1\n  Pt  Pt77  1  0.873075  0.124336  0.312363  1\n  Pt  Pt78  1  0.207326  0.457361  0.396391  1\n  Pt  Pt79  1  0.124941  0.874945  0.442743  1\n  Pt  Pt80  1  0.620887  0.370884  0.434147  1\n  Pt  Pt81  1  0.545873  0.800375  0.476801  1\n  Pt  Pt82  1  0.050373  0.295872  0.476800  1\n  Pt  Pt83  1  0.957843  0.707847  0.271213  1\n  Pt  Pt84  1  0.458006  0.208003  0.270493  1\n  Pt  Pt85  1  0.623253  0.373246  0.311787  1\n  Pt  Pt86  1  0.539093  0.790139  0.353985  1\n  Pt  Pt87  1  0.040137  0.289090  0.353985  1\n  Pt  Pt88  1  0.959645  0.709647  0.396321  1\n  Pt  Pt89  1  0.124046  0.874053  0.312671  1\n  Pt  Pt90  1  0.453536  0.203534  0.395963  1\n  Pt  Pt91  1  0.362265  0.634382  0.439167  1\n  Pt  Pt92  1  0.884383  0.112267  0.439167  1\n  Pt  Pt93  1  0.801355  0.551352  0.477624  1\n  Pt  Pt94  1  0.302109  0.052112  0.475502  1\n  Pt  Pt95  1  0.207640  0.458264  0.270883  1\n  Pt  Pt96  1  0.708269  0.957646  0.270883  1\n",
+      "work_function": 5.4298901455761595,
+      "efermi": 0.8649,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        2,
+        2,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09982560766901528,
+      "surface_energy": 1.599382486950525,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.81013993\n_cell_length_b   8.44209813\n_cell_length_c   23.84850500\n_cell_angle_alpha   90.00214373\n_cell_angle_beta   90.00036020\n_cell_angle_gamma   89.99726744\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt18\n_cell_volume   565.76946013\n_cell_formula_units_Z   18\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.000020  0.454128  0.948476  1\n  Pt  Pt2  1  0.000019  0.896021  0.884376  1\n  Pt  Pt3  1  0.000002  0.984707  0.992380  1\n  Pt  Pt4  1  0.000014  0.334227  0.836747  1\n  Pt  Pt5  1  0.000007  0.784110  0.777006  1\n  Pt  Pt6  1  0.999994  0.212711  0.722184  1\n  Pt  Pt7  1  0.999983  0.665673  0.668977  1\n  Pt  Pt8  1  0.999985  0.093474  0.603211  1\n  Pt  Pt9  1  0.999989  0.560810  0.556965  1\n  Pt  Pt10  1  0.500008  0.612153  0.858804  1\n  Pt  Pt11  1  0.500012  0.065162  0.805583  1\n  Pt  Pt12  1  0.500014  0.184223  0.924573  1\n  Pt  Pt13  1  0.499993  0.493735  0.750770  1\n  Pt  Pt14  1  0.499994  0.943619  0.691036  1\n  Pt  Pt15  1  0.499984  0.381788  0.643400  1\n  Pt  Pt16  1  0.499978  0.823580  0.579298  1\n  Pt  Pt17  1  0.499994  0.292990  0.535403  1\n  Pt  Pt18  1  0.500009  0.716889  0.970810  1\n",
+      "work_function": 5.424324901852527,
+      "efermi": 0.8432,
+      "area_fraction": 0.18283500009425505,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        2,
+        1,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.11777179922684762,
+      "surface_energy": 1.8869121615028137,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   3.97630500\n_cell_length_b   4.87000488\n_cell_length_c   35.56555874\n_cell_angle_alpha   90.00000066\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   114.09459553\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt20\n_cell_volume   628.70792665\n_cell_formula_units_Z   20\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.602221  0.204443  0.200223  1\n  Pt  Pt2  1  0.201402  0.402803  0.149593  1\n  Pt  Pt3  1  0.804589  0.609178  0.099391  1\n  Pt  Pt4  1  0.390948  0.781896  0.047508  1\n  Pt  Pt5  1  0.001860  0.003720  0.005630  1\n  Pt  Pt6  1  0.902367  0.804734  0.174992  1\n  Pt  Pt7  1  0.501175  0.002350  0.125136  1\n  Pt  Pt8  1  0.102103  0.204207  0.076505  1\n  Pt  Pt9  1  0.696661  0.393321  0.023212  1\n  Pt  Pt10  1  0.300892  0.601785  0.224600  1\n  Pt  Pt11  1  0.603339  0.206679  0.451788  1\n  Pt  Pt12  1  0.197897  0.395793  0.398495  1\n  Pt  Pt13  1  0.798825  0.597650  0.349864  1\n  Pt  Pt14  1  0.397633  0.795266  0.300008  1\n  Pt  Pt15  1  0.999108  0.998215  0.250400  1\n  Pt  Pt16  1  0.909052  0.818104  0.427492  1\n  Pt  Pt17  1  0.495411  0.990822  0.375609  1\n  Pt  Pt18  1  0.098598  0.197197  0.325407  1\n  Pt  Pt19  1  0.697779  0.395557  0.274777  1\n  Pt  Pt20  1  0.298140  0.596280  0.469370  1\n",
+      "work_function": 5.297025656700141,
+      "efermi": 0.94,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        1,
+        1,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09285921898454562,
+      "surface_energy": 1.4877686403694599,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.81164500\n_cell_length_b   2.81164525\n_cell_length_c   41.32257700\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   120.00000879\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt9\n_cell_volume   282.90394330\n_cell_formula_units_Z   9\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.666667  0.333333  0.333657  1\n  Pt  Pt2  1  0.333333  0.666667  0.277559  1\n  Pt  Pt3  1  0.000000  0.000000  0.388974  1\n  Pt  Pt4  1  0.666667  0.333333  0.500000  1\n  Pt  Pt5  1  0.333333  0.666667  0.444327  1\n  Pt  Pt6  1  0.000000  0.000000  0.555673  1\n  Pt  Pt7  1  0.666667  0.333333  0.666343  1\n  Pt  Pt8  1  0.333333  0.666667  0.611026  1\n  Pt  Pt9  1  0.000000  0.000000  0.722441  1\n",
+      "work_function": 5.644347744668675,
+      "efermi": 0.77852449,
+      "area_fraction": 0.27341228695748715,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        1,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.11180824954987917,
+      "surface_energy": 1.7913655664344694,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.81292452\n_cell_length_b   4.87096047\n_cell_length_c   28.79055360\n_cell_angle_alpha   88.32300526\n_cell_angle_beta   87.19990110\n_cell_angle_gamma   73.21721238\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt15\n_cell_volume   377.17731151\n_cell_formula_units_Z   15\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.291372  0.124036  0.293221  1\n  Pt  Pt2  1  0.889214  0.007370  0.214202  1\n  Pt  Pt3  1  0.602376  0.550221  0.245025  1\n  Pt  Pt4  1  0.414538  0.754216  0.416710  1\n  Pt  Pt5  1  0.999225  0.668833  0.332717  1\n  Pt  Pt6  1  0.705776  0.213251  0.375196  1\n  Pt  Pt7  1  0.542801  0.372699  0.541701  1\n  Pt  Pt8  1  0.123866  0.293968  0.458299  1\n  Pt  Pt9  1  0.833333  0.833333  0.500000  1\n  Pt  Pt10  1  0.667442  0.997834  0.667283  1\n  Pt  Pt11  1  0.252129  0.912451  0.583290  1\n  Pt  Pt12  1  0.960890  0.453415  0.624804  1\n  Pt  Pt13  1  0.777453  0.659297  0.785798  1\n  Pt  Pt14  1  0.375295  0.542631  0.706779  1\n  Pt  Pt15  1  0.064290  0.116445  0.754975  1\n",
+      "work_function": 5.471404093816234,
+      "efermi": 2.4481,
+      "area_fraction": 0.08873980206807808,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        2,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.11822444799430172,
+      "surface_energy": 1.8941643939540922,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   3.97409700\n_cell_length_b   7.44602917\n_cell_length_c   22.30490322\n_cell_angle_alpha   81.73759981\n_cell_angle_beta   84.88898693\n_cell_angle_gamma   74.52248315\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt20\n_cell_volume   628.60016325\n_cell_formula_units_Z   20\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.402876  0.758063  0.436185  1\n  Pt  Pt2  1  0.197987  0.268903  0.335123  1\n  Pt  Pt3  1  0.998957  0.515326  0.486760  1\n  Pt  Pt4  1  0.798473  0.012094  0.390960  1\n  Pt  Pt5  1  0.596811  0.512674  0.293704  1\n  Pt  Pt6  1  0.995097  0.652615  0.357191  1\n  Pt  Pt7  1  0.797975  0.131513  0.272537  1\n  Pt  Pt8  1  0.600090  0.386827  0.412992  1\n  Pt  Pt9  1  0.400732  0.889971  0.308564  1\n  Pt  Pt10  1  0.200323  0.135262  0.464091  1\n  Pt  Pt11  1  0.399268  0.510029  0.691436  1\n  Pt  Pt12  1  0.199910  0.013173  0.587008  1\n  Pt  Pt13  1  0.002025  0.268487  0.727463  1\n  Pt  Pt14  1  0.804903  0.747385  0.642809  1\n  Pt  Pt15  1  0.599676  0.264738  0.535909  1\n  Pt  Pt16  1  0.001527  0.387906  0.609040  1\n  Pt  Pt17  1  0.801043  0.884674  0.513240  1\n  Pt  Pt18  1  0.602013  0.131097  0.664877  1\n  Pt  Pt19  1  0.397124  0.641937  0.563815  1\n  Pt  Pt20  1  0.203189  0.887326  0.706296  1\n",
+      "work_function": 5.197180182207573,
+      "efermi": 0.977,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        2,
+        2
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09942257085791444,
+      "surface_energy": 1.5929251256348957,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.81206043\n_cell_length_b   11.60844138\n_cell_length_c   23.15683142\n_cell_angle_alpha   93.45805196\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt24\n_cell_volume   754.54687238\n_cell_formula_units_Z   24\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.000000  0.751261  0.375837  1\n  Pt  Pt2  1  0.000000  0.349065  0.313170  1\n  Pt  Pt3  1  1.000000  0.945272  0.288116  1\n  Pt  Pt4  1  0.500000  0.549989  0.334370  1\n  Pt  Pt5  1  0.500000  0.146499  0.298511  1\n  Pt  Pt6  1  0.500000  0.744761  0.275093  1\n  Pt  Pt7  1  0.000000  0.979915  0.495417  1\n  Pt  Pt8  1  1.000000  0.570111  0.445995  1\n  Pt  Pt9  1  1.000000  0.164955  0.402781  1\n  Pt  Pt10  1  0.500000  0.773705  0.478333  1\n  Pt  Pt11  1  0.500000  0.370070  0.417644  1\n  Pt  Pt12  1  0.500000  0.959297  0.393180  1\n  Pt  Pt13  1  1.000000  0.207409  0.606829  1\n  Pt  Pt14  1  1.000000  0.796616  0.582358  1\n  Pt  Pt15  1  0.000000  0.393021  0.521671  1\n  Pt  Pt16  1  0.500000  0.001758  0.597218  1\n  Pt  Pt17  1  0.500000  0.596581  0.553985  1\n  Pt  Pt18  1  0.500000  0.186847  0.504588  1\n  Pt  Pt19  1  1.000000  0.421802  0.724888  1\n  Pt  Pt20  1  0.000000  0.020097  0.701490  1\n  Pt  Pt21  1  1.000000  0.616661  0.665632  1\n  Pt  Pt22  1  0.500000  0.221284  0.711897  1\n  Pt  Pt23  1  0.500000  0.817570  0.686837  1\n  Pt  Pt24  1  0.500000  0.415450  0.624160  1\n",
+      "work_function": 5.553144193162518,
+      "efermi": 0.7824,
+      "area_fraction": 0.24850681029913588,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        3,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.10645188775605413,
+      "surface_energy": 1.705547193305009,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.81168849\n_cell_length_b   6.28753169\n_cell_length_c   21.96010512\n_cell_angle_alpha   86.71556964\n_cell_angle_beta   86.32952290\n_cell_angle_gamma   77.07988049\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt12\n_cell_volume   377.24973609\n_cell_formula_units_Z   12\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.674821  0.371194  0.279162  1\n  Pt  Pt2  1  0.339906  0.009820  0.310371  1\n  Pt  Pt3  1  0.997438  0.524921  0.480202  1\n  Pt  Pt4  1  0.999186  0.652627  0.349001  1\n  Pt  Pt5  1  0.664061  0.272757  0.399118  1\n  Pt  Pt6  1  0.336186  0.891338  0.436292  1\n  Pt  Pt7  1  0.669228  0.141745  0.519798  1\n  Pt  Pt8  1  0.330482  0.775330  0.563708  1\n  Pt  Pt9  1  0.991845  0.295472  0.720838  1\n  Pt  Pt10  1  0.002605  0.393909  0.600882  1\n  Pt  Pt11  1  0.667480  0.014039  0.650999  1\n  Pt  Pt12  1  0.326762  0.656848  0.689629  1\n",
+      "work_function": 5.239231085510516,
+      "efermi": 0.9281,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        1,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.1172051162619217,
+      "surface_energy": 1.8778328998692575,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   3.97580500\n_cell_length_b   6.28729263\n_cell_length_c   22.66585260\n_cell_angle_alpha   93.17426749\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt18\n_cell_volume   565.71015526\n_cell_formula_units_Z   18\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.000000  0.960282  0.342843  1\n  Pt  Pt2  1  0.000000  0.364728  0.295759  1\n  Pt  Pt3  1  0.000000  0.598655  0.403722  1\n  Pt  Pt4  1  0.500000  0.660840  0.314413  1\n  Pt  Pt5  1  0.500000  0.073905  0.272883  1\n  Pt  Pt6  1  0.500000  0.293695  0.378487  1\n  Pt  Pt7  1  0.000000  0.821248  0.513403  1\n  Pt  Pt8  1  0.000000  0.203129  0.458064  1\n  Pt  Pt9  1  0.000000  0.433426  0.571727  1\n  Pt  Pt10  1  0.500000  0.512086  0.486597  1\n  Pt  Pt11  1  0.500000  0.899908  0.428273  1\n  Pt  Pt12  1  0.500000  0.130203  0.541936  1\n  Pt  Pt13  1  0.000000  0.672494  0.685587  1\n  Pt  Pt14  1  0.000000  0.039637  0.621513  1\n  Pt  Pt15  1  0.000000  0.259429  0.727117  1\n  Pt  Pt16  1  0.500000  0.373052  0.657157  1\n  Pt  Pt17  1  0.500000  0.734679  0.596278  1\n  Pt  Pt18  1  0.500000  0.968604  0.704241  1\n",
+      "work_function": 5.43925246921711,
+      "efermi": 0.8529,
+      "area_fraction": 0.0009379253738067796,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        3,
+        2
+      ],
+      "surface_energy_EV_PER_ANG2": 0.0974366568043612,
+      "surface_energy": 1.56110727616712,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.81482663\n_cell_length_b   13.19327713\n_cell_length_c   41.06868088\n_cell_angle_alpha   98.39469477\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt48\n_cell_volume   1508.81811591\n_cell_formula_units_Z   48\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.000000  0.119190  0.733013  1\n  Pt  Pt2  1  0.000000  0.940666  0.567469  1\n  Pt  Pt3  1  0.000000  0.773776  0.401355  1\n  Pt  Pt4  1  0.000000  0.806723  0.698178  1\n  Pt  Pt5  1  0.000000  0.652302  0.526147  1\n  Pt  Pt6  1  0.000000  0.484765  0.356685  1\n  Pt  Pt7  1  0.000000  0.461242  0.714359  1\n  Pt  Pt8  1  0.000000  0.296722  0.547235  1\n  Pt  Pt9  1  0.000000  0.134733  0.380569  1\n  Pt  Pt10  1  0.000000  0.172498  0.670049  1\n  Pt  Pt11  1  0.000000  0.005504  0.504948  1\n  Pt  Pt12  1  0.000000  0.837427  0.339638  1\n  Pt  Pt13  1  0.000000  0.873331  0.630616  1\n  Pt  Pt14  1  0.000000  0.712336  0.463383  1\n  Pt  Pt15  1  0.000000  0.554801  0.293838  1\n  Pt  Pt16  1  0.000000  0.240440  0.259507  1\n  Pt  Pt17  1  0.000000  0.591305  0.589156  1\n  Pt  Pt18  1  0.000000  0.422049  0.421409  1\n  Pt  Pt19  1  0.000000  0.526638  0.651243  1\n  Pt  Pt20  1  0.000000  0.358777  0.484774  1\n  Pt  Pt21  1  0.000000  0.196247  0.320254  1\n  Pt  Pt22  1  0.000000  0.233929  0.608750  1\n  Pt  Pt23  1  0.000000  0.069486  0.442440  1\n  Pt  Pt24  1  0.000000  0.898164  0.276547  1\n  Pt  Pt25  1  0.500000  0.991253  0.679746  1\n  Pt  Pt26  1  0.500000  0.828723  0.515226  1\n  Pt  Pt27  1  0.500000  0.660862  0.348757  1\n  Pt  Pt28  1  0.500000  0.702735  0.643315  1\n  Pt  Pt29  1  0.500000  0.535198  0.473853  1\n  Pt  Pt30  1  0.500000  0.380777  0.301822  1\n  Pt  Pt31  1  0.500000  0.350073  0.660362  1\n  Pt  Pt32  1  0.500000  0.181996  0.495052  1\n  Pt  Pt33  1  0.500000  0.015002  0.329951  1\n  Pt  Pt34  1  0.500000  0.052767  0.619431  1\n  Pt  Pt35  1  0.500000  0.890778  0.452765  1\n  Pt  Pt36  1  0.500000  0.726258  0.285641  1\n  Pt  Pt37  1  0.500000  0.947060  0.740493  1\n  Pt  Pt38  1  0.500000  0.765451  0.578591  1\n  Pt  Pt39  1  0.500000  0.596195  0.410844  1\n  Pt  Pt40  1  0.500000  0.632699  0.706162  1\n  Pt  Pt41  1  0.500000  0.475164  0.536617  1\n  Pt  Pt42  1  0.500000  0.314169  0.369384  1\n  Pt  Pt43  1  0.500000  0.413724  0.598645  1\n  Pt  Pt44  1  0.500000  0.246834  0.432531  1\n  Pt  Pt45  1  0.500000  0.068310  0.266987  1\n  Pt  Pt46  1  0.500000  0.289336  0.723453  1\n  Pt  Pt47  1  0.500000  0.118014  0.557560  1\n  Pt  Pt48  1  0.500000  0.953571  0.391250  1\n",
+      "work_function": 5.502228274425521,
+      "efermi": 0.8397,
+      "area_fraction": 0.11384299170212456,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        2,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.11036653462508454,
+      "surface_energy": 1.7682667478473881,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   4.87054274\n_cell_length_b   6.28840435\n_cell_length_c   25.59935230\n_cell_angle_alpha   92.77533681\n_cell_angle_beta   93.58419821\n_cell_angle_gamma   104.98916274\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt24\n_cell_volume   754.19813808\n_cell_formula_units_Z   24\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.907120  0.279886  0.367883  1\n  Pt  Pt2  1  0.156351  0.101447  0.284473  1\n  Pt  Pt3  1  0.030246  0.684068  0.316081  1\n  Pt  Pt4  1  0.597045  0.891719  0.301468  1\n  Pt  Pt5  1  0.457688  0.489343  0.339957  1\n  Pt  Pt6  1  0.718971  0.296619  0.269019  1\n  Pt  Pt7  1  0.529778  0.021269  0.489439  1\n  Pt  Pt8  1  0.786569  0.852165  0.405822  1\n  Pt  Pt9  1  0.651491  0.441818  0.448128  1\n  Pt  Pt10  1  0.223267  0.648979  0.426707  1\n  Pt  Pt11  1  0.089273  0.230581  0.468219  1\n  Pt  Pt12  1  0.345896  0.063078  0.386461  1\n  Pt  Pt13  1  0.154104  0.770255  0.613539  1\n  Pt  Pt14  1  0.410727  0.602753  0.531781  1\n  Pt  Pt15  1  0.276733  0.184354  0.573293  1\n  Pt  Pt16  1  0.848509  0.391515  0.551872  1\n  Pt  Pt17  1  0.713431  0.981169  0.594178  1\n  Pt  Pt18  1  0.970222  0.812064  0.510561  1\n  Pt  Pt19  1  0.781029  0.536714  0.730981  1\n  Pt  Pt20  1  0.042312  0.343991  0.660043  1\n  Pt  Pt21  1  0.902955  0.941614  0.698532  1\n  Pt  Pt22  1  0.469754  0.149265  0.683919  1\n  Pt  Pt23  1  0.343649  0.731887  0.715527  1\n  Pt  Pt24  1  0.592880  0.553447  0.632117  1\n",
+      "work_function": 5.342559544867875,
+      "efermi": 0.8914,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        1,
+        0,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.11583359395652872,
+      "surface_energy": 1.8558586909770796,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.81155300\n_cell_length_b   2.81155300\n_cell_length_c   31.80908600\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt8\n_cell_volume   251.44542593\n_cell_formula_units_Z   8\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt1  1  0.000000  0.000000  0.656001  1\n  Pt  Pt2  1  0.500000  0.500000  0.716836  1\n  Pt  Pt3  1  0.000000  0.000000  0.531294  1\n  Pt  Pt4  1  0.500000  0.500000  0.593755  1\n  Pt  Pt5  1  0.000000  0.000000  0.406245  1\n  Pt  Pt6  1  0.500000  0.500000  0.468706  1\n  Pt  Pt7  1  0.000000  0.000000  0.283164  1\n  Pt  Pt8  1  0.500000  0.500000  0.343999  1\n",
+      "work_function": 5.675930930327548,
+      "efermi": 0.77586296,
+      "area_fraction": 0.045057990643108815,
+      "has_wulff": true
+    }
+  ],
+  "weighted_surface_energy_EV_PER_ANG2": 0.09958639998883213,
+  "pretty_formula": "Pt",
+  "weighted_surface_energy": 1.595549957568911,
+  "surface_anisotropy": 0.06324840447412147,
+  "shape_factor": 5.084893456998606,
+  "weighted_work_function": 5.536261798594178,
+  "has_reconstructed": true,
+  "material_id": "mp-126",
+  "fields_not_requested": [
+    "structure"
+  ]
+}

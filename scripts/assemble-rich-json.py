@@ -47,6 +47,10 @@ RICH_OUTPUT = DATA_DIR / "mp-materials-rich.json"
 LOCK_OUTPUT = DATA_DIR / "mess-parameters-lock.json"
 UNMAPPED_OUTPUT = DATA_DIR / "unmapped-materials.json"
 SCHEMA_PATH = REPO_ROOT / "schemas" / "mp-material.schema.json"
+ELASTICITY_CACHE = DATA_DIR / "mp-cache-elasticity"
+SURFACES_CACHE = DATA_DIR / "mp-cache-surfaces"
+
+SCHEMA_VERSION = "0.2.0"
 
 
 def get_mess_parameters_tag() -> str | None:
@@ -81,6 +85,62 @@ def load_mp_cache(mp_id: str) -> dict:
             f"MP cache miss for {mp_id}. Run `python scripts/fetch-mp.py` first."
         )
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def load_optional_cache(cache_dir: Path, mp_id: str) -> dict | None:
+    """Return cached doc or None if missing (sentinel or absent file)."""
+    path = cache_dir / f"{mp_id}.json"
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if isinstance(data, dict) and data.get("missing"):
+        return None
+    return data
+
+
+def build_elasticity_block(mp_id: str) -> dict | None:
+    """Translate raw MP elasticity doc → schema-shaped elasticity block."""
+    raw = load_optional_cache(ELASTICITY_CACHE, mp_id)
+    if raw is None:
+        return None
+
+    def vrh_scalar(field: str) -> float | None:
+        val = raw.get(field)
+        if isinstance(val, dict):
+            return val.get("vrh")
+        return val
+
+    bulk = vrh_scalar("bulk_modulus")
+    shear = vrh_scalar("shear_modulus")
+    youngs = raw.get("youngs_modulus")
+    if youngs is None and bulk is not None and shear is not None and (3 * bulk + shear) > 0:
+        # Derived relation E = 9KG / (3K + G)
+        youngs = (9 * bulk * shear) / (3 * bulk + shear)
+
+    return {
+        "bulk_modulus_GPa": bulk,
+        "shear_modulus_GPa": shear,
+        "youngs_modulus_GPa": youngs,
+        "poissons_ratio": raw.get("homogeneous_poisson"),
+        "universal_anisotropy": raw.get("universal_anisotropy"),
+        "debye_temperature_K": raw.get("debye_temperature"),
+        "source_functional": "PBE",
+    }
+
+
+def build_surface_block(mp_id: str) -> dict | None:
+    """Translate raw MP surface-properties doc → schema-shaped surface block."""
+    raw = load_optional_cache(SURFACES_CACHE, mp_id)
+    if raw is None:
+        return None
+    return {
+        "weighted_surface_energy_J_per_m2": raw.get("weighted_surface_energy"),
+        "work_function_eV": raw.get("weighted_work_function"),
+        "surface_anisotropy": raw.get("surface_anisotropy"),
+        "shape_factor": raw.get("shape_factor"),
+        "has_reconstructed": raw.get("has_reconstructed"),
+        "source_functional": "PBE",
+    }
 
 
 def weighted_average(values: list[tuple[float | None, float]]) -> float | None:
@@ -216,6 +276,8 @@ def assemble_material(entry: dict, pourbaix_all: dict) -> dict:
         "total_magnetization_uB": weighted_average(weighted_fields["total_magnetization_uB"]),
         "pourbaix": pourbaix_entry,
         "structure_cif": primary_cif,
+        "elasticity": build_elasticity_block(primary_mp_id),
+        "surface": build_surface_block(primary_mp_id),
         "notes": entry.get("notes"),
     }
 
@@ -253,7 +315,7 @@ def main() -> None:
         )
 
     envelope = {
-        "schema_version": "0.1.0",
+        "schema_version": SCHEMA_VERSION,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "mess_parameters_tag": get_mess_parameters_tag(),
         "materials": mapped_materials,

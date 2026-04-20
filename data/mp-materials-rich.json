@@ -1,6 +1,6 @@
 {
-  "schema_version": "0.1.0",
-  "generated_at": "2026-04-20T02:58:27.557530+00:00",
+  "schema_version": "0.2.0",
+  "generated_at": "2026-04-20T04:22:18.370981+00:00",
   "mess_parameters_tag": "sha:0aaca53",
   "materials": [
     {
@@ -44,6 +44,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_Pt\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.78822830\n_cell_length_b   2.78822888\n_cell_length_c   2.78822786\n_cell_angle_alpha   59.99999996\n_cell_angle_beta   59.99999310\n_cell_angle_gamma   60.00000911\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Pt\n_chemical_formula_sum   Pt1\n_cell_volume   15.32745405\n_cell_formula_units_Z   1\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Pt  Pt0  1  -0.00000000  0.00000000  -0.00000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 248.014,
+        "shear_modulus_GPa": 49.52,
+        "youngs_modulus_GPa": 139.2895319080299,
+        "poissons_ratio": 0.406,
+        "universal_anisotropy": 0.178,
+        "debye_temperature_K": 208.7406283285464,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 1.595549957568911,
+        "work_function_eV": 5.536261798594178,
+        "surface_anisotropy": 0.06324840447412147,
+        "shape_factor": 5.084893456998606,
+        "has_reconstructed": true,
+        "source_functional": "PBE"
+      },
       "notes": "Benchmark noble-metal cathode; thermodynamically stable across all MES operating conditions."
     },
     {
@@ -87,6 +104,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.52962530\n_cell_length_b   2.52962585\n_cell_length_c   2.52962495\n_cell_angle_alpha   60.00001167\n_cell_angle_beta   60.00000445\n_cell_angle_gamma   60.00000264\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu1\n_cell_volume   11.44599856\n_cell_formula_units_Z   1\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu0  1  -0.00000000  -0.00000000  -0.00000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 151.394,
+        "shear_modulus_GPa": 49.843,
+        "youngs_modulus_GPa": 134.74208675760133,
+        "poissons_ratio": 0.352,
+        "universal_anisotropy": 1.573,
+        "debye_temperature_K": 348.09711384343245,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 1.4219481602647859,
+        "work_function_eV": 4.533632204404293,
+        "surface_anisotropy": 0.05770385722138485,
+        "shape_factor": 5.0701625003456945,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "Copper is biocidal in dissolved form \u2014 flag for biofilm compatibility in BCS."
     },
     {
@@ -130,6 +164,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_Ni\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.45729895\n_cell_length_b   2.45729940\n_cell_length_c   2.45729885\n_cell_angle_alpha   60.00000722\n_cell_angle_beta   60.00000120\n_cell_angle_gamma   60.00001459\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Ni\n_chemical_formula_sum   Ni1\n_cell_volume   10.49202034\n_cell_formula_units_Z   1\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Ni  Ni0  1  -0.00000000  -0.00000000  0.00000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 173.808,
+        "shear_modulus_GPa": 91.592,
+        "youngs_modulus_GPa": 233.72114434859773,
+        "poissons_ratio": 0.276,
+        "universal_anisotropy": 0.837,
+        "debye_temperature_K": 478.7421013727594,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 2.0354403744082457,
+        "work_function_eV": 4.979696758232965,
+        "surface_anisotropy": 0.07043113959701569,
+        "shape_factor": 5.177499570474934,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "Foam morphology not captured by crystalline Ni; use only the bulk chemistry + passivator behavior. Porosity lives in MESS-Parameters measurements."
     },
     {
@@ -173,6 +224,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_Fe\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.47781303\n_cell_length_b   2.47780913\n_cell_length_c   4.05429521\n_cell_angle_alpha   90.00003845\n_cell_angle_beta   90.00031951\n_cell_angle_gamma   109.46983668\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Fe\n_chemical_formula_sum   Fe2\n_cell_volume   23.46816847\n_cell_formula_units_Z   2\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Fe  Fe0  1  0.50000002  0.50000008  0.49999999  1\n  Fe  Fe1  1  0.99999998  0.99999992  0.00000001  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 207.093,
+        "shear_modulus_GPa": 67.563,
+        "youngs_modulus_GPa": 182.80885780919283,
+        "poissons_ratio": 0.353,
+        "universal_anisotropy": 0.878,
+        "debye_temperature_K": 428.9834606726175,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 2.526923619112013,
+        "work_function_eV": 4.310025423250179,
+        "surface_anisotropy": 0.03002388576758528,
+        "shape_factor": 4.942329146771031,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "Stainless is an Fe-Cr-Ni alloy; MP has no alloy composition exactly matching common SS grades (304, 316). Using Fe with passivator override captures the practical corrosion behavior. Refine with specific alloys in v0.2+."
     },
     {
@@ -216,6 +284,8 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_MnO2\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.85469766\n_cell_length_b   7.01576424\n_cell_length_c   7.01953963\n_cell_angle_alpha   87.57534312\n_cell_angle_beta   78.26880630\n_cell_angle_gamma   78.25214817\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   MnO2\n_chemical_formula_sum   'Mn4 O8'\n_cell_volume   134.76660221\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Mn  Mn0  1  0.65155204  0.18203102  0.51786946  1\n  Mn  Mn1  1  0.16804623  0.48550696  0.18212972  1\n  Mn  Mn2  1  0.83274373  0.51734630  0.82091119  1\n  Mn  Mn3  1  0.34951250  0.82079611  0.48529819  1\n  O  O4  1  0.83716519  0.70747424  0.62277073  1\n  O  O5  1  0.45806578  0.37951197  0.70828811  1\n  O  O6  1  0.54292522  0.62333355  0.29478472  1\n  O  O7  1  0.16393066  0.29542335  0.38037727  1\n  O  O8  1  0.15608275  0.04887425  0.64306196  1\n  O  O9  1  0.79731915  0.35998702  0.04946720  1\n  O  O10  1  0.84509788  0.95399027  0.36012846  1\n  O  O11  1  0.20373986  0.64288495  0.95357498  1\n",
+      "elasticity": null,
+      "surface": null,
       "notes": "MES literature usually reports MnO2 without phase specification. \u03b2-MnO2 is the default; \u03b1- and \u03b3-phases would give different Pourbaix signatures. Flag phase ambiguity."
     },
     {
@@ -259,6 +329,8 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_Fe3O4\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   5.97179853\n_cell_length_b   5.97028597\n_cell_length_c   5.97006760\n_cell_angle_alpha   60.01949761\n_cell_angle_beta   59.99471754\n_cell_angle_gamma   59.99050118\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Fe3O4\n_chemical_formula_sum   'Fe6 O8'\n_cell_volume   150.51505689\n_cell_formula_units_Z   2\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Fe  Fe0  1  0.87486095  0.87520887  0.87514198  1\n  Fe  Fe1  1  0.00003858  0.50002372  0.49986910  1\n  Fe  Fe2  1  0.49975642  0.50027536  0.50007724  1\n  Fe  Fe3  1  0.12485791  0.12520719  0.12513777  1\n  Fe  Fe4  1  0.49994434  0.00008791  0.50023870  1\n  Fe  Fe5  1  0.50012994  0.49994507  0.99995687  1\n  O  O6  1  0.74366390  0.74325511  0.26918542  1\n  O  O7  1  0.73084474  0.25610164  0.25633043  1\n  O  O8  1  0.25678137  0.25611405  0.25624534  1\n  O  O9  1  0.26904047  0.74363617  0.74363374  1\n  O  O10  1  0.25623964  0.73108131  0.25626586  1\n  O  O11  1  0.74374174  0.74358169  0.74374672  1\n  O  O12  1  0.25635678  0.25630637  0.73097179  1\n  O  O13  1  0.74374521  0.26917553  0.74319803  1\n",
+      "elasticity": null,
+      "surface": null,
       "notes": "Magnetite chosen over hematite (Fe2O3, mp-19770) because it is semi-metallic at room temperature and dominant in MES applications. Hematite coverage is a v0.2 refinement."
     },
     {
@@ -302,6 +374,8 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_Co3O4\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   5.68925857\n_cell_length_b   5.68929319\n_cell_length_c   5.68933027\n_cell_angle_alpha   60.00005078\n_cell_angle_beta   59.99996802\n_cell_angle_gamma   59.99957933\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Co3O4\n_chemical_formula_sum   'Co6 O8'\n_cell_volume   130.21434052\n_cell_formula_units_Z   2\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Co  Co0  1  0.50000008  -0.00000206  0.50000088  1\n  Co  Co1  1  -0.00000248  0.50000185  0.50000021  1\n  Co  Co2  1  0.50000020  0.49999800  0.00000166  1\n  Co  Co3  1  0.50000016  0.49999795  0.50000010  1\n  Co  Co4  1  0.12502789  0.12501989  0.12497272  1\n  Co  Co5  1  0.87498812  0.87500117  0.87500857  1\n  O  O6  1  0.73694323  0.73694607  0.73694738  1\n  O  O7  1  0.26304946  0.26305027  0.71084299  1\n  O  O8  1  0.26304724  0.71084215  0.26305423  1\n  O  O9  1  0.71084929  0.26304177  0.26305412  1\n  O  O10  1  0.73694554  0.28916363  0.73694642  1\n  O  O11  1  0.28916224  0.73694312  0.73694761  1\n  O  O12  1  0.26304768  0.26305023  0.26305509  1\n  O  O13  1  0.73694137  0.73694596  0.28916704  1\n",
+      "elasticity": null,
+      "surface": null,
       "notes": null
     },
     {
@@ -345,6 +419,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46729100\n_cell_length_b   2.46729152\n_cell_length_c   7.80307300\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   120.00000639\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C4\n_cell_volume   41.13742607\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C0  1  0.00000000  0.00000000  0.25000000  1\n  C  C1  1  0.00000000  0.00000000  0.75000000  1\n  C  C2  1  0.33333300  0.66666700  0.25000000  1\n  C  C3  1  0.66666700  0.33333300  0.75000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 115.976,
+        "shear_modulus_GPa": 89.734,
+        "youngs_modulus_GPa": 214.00741543931164,
+        "poissons_ratio": 0.192,
+        "universal_anisotropy": 1244.456,
+        "debye_temperature_K": 1033.8205758623187,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 0.019117341026327606,
+        "work_function_eV": 5.025480570101199,
+        "surface_anisotropy": 21.066744572741296,
+        "shape_factor": 72.51049744764661,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "Amorphous/partially-ordered carbon fabric. EVS/LSS low-confidence; differentiate via surface-treatment parameters in MESS-Parameters."
     },
     {
@@ -388,6 +479,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46729100\n_cell_length_b   2.46729152\n_cell_length_c   7.80307300\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   120.00000639\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C4\n_cell_volume   41.13742607\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C0  1  0.00000000  0.00000000  0.25000000  1\n  C  C1  1  0.00000000  0.00000000  0.75000000  1\n  C  C2  1  0.33333300  0.66666700  0.25000000  1\n  C  C3  1  0.66666700  0.33333300  0.75000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 115.976,
+        "shear_modulus_GPa": 89.734,
+        "youngs_modulus_GPa": 214.00741543931164,
+        "poissons_ratio": 0.192,
+        "universal_anisotropy": 1244.456,
+        "debye_temperature_K": 1033.8205758623187,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 0.019117341026327606,
+        "work_function_eV": 5.025480570101199,
+        "surface_anisotropy": 21.066744572741296,
+        "shape_factor": 72.51049744764661,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "Same proxy caveat as carbon_cloth. Higher porosity than cloth \u2014 structural difference not captured by DFT."
     },
     {
@@ -431,6 +539,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46729100\n_cell_length_b   2.46729152\n_cell_length_c   7.80307300\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   120.00000639\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C4\n_cell_volume   41.13742607\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C0  1  0.00000000  0.00000000  0.25000000  1\n  C  C1  1  0.00000000  0.00000000  0.75000000  1\n  C  C2  1  0.33333300  0.66666700  0.25000000  1\n  C  C3  1  0.66666700  0.33333300  0.75000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 115.976,
+        "shear_modulus_GPa": 89.734,
+        "youngs_modulus_GPa": 214.00741543931164,
+        "poissons_ratio": 0.192,
+        "universal_anisotropy": 1244.456,
+        "debye_temperature_K": 1033.8205758623187,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 0.019117341026327606,
+        "work_function_eV": 5.025480570101199,
+        "surface_anisotropy": 21.066744572741296,
+        "shape_factor": 72.51049744764661,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "Same proxy caveat as carbon_cloth."
     },
     {
@@ -474,6 +599,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46729100\n_cell_length_b   2.46729152\n_cell_length_c   7.80307300\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   120.00000639\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C4\n_cell_volume   41.13742607\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C0  1  0.00000000  0.00000000  0.25000000  1\n  C  C1  1  0.00000000  0.00000000  0.75000000  1\n  C  C2  1  0.33333300  0.66666700  0.25000000  1\n  C  C3  1  0.66666700  0.33333300  0.75000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 115.976,
+        "shear_modulus_GPa": 89.734,
+        "youngs_modulus_GPa": 214.00741543931164,
+        "poissons_ratio": 0.192,
+        "universal_anisotropy": 1244.456,
+        "debye_temperature_K": 1033.8205758623187,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 0.019117341026327606,
+        "work_function_eV": 5.025480570101199,
+        "surface_anisotropy": 21.066744572741296,
+        "shape_factor": 72.51049744764661,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "Actually graphitic, unlike the fabric forms. Confidence downgraded only by morphology uncertainty, not chemistry."
     },
     {
@@ -517,6 +659,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46729100\n_cell_length_b   2.46729152\n_cell_length_c   7.80307300\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   120.00000639\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C4\n_cell_volume   41.13742607\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C0  1  0.00000000  0.00000000  0.25000000  1\n  C  C1  1  0.00000000  0.00000000  0.75000000  1\n  C  C2  1  0.33333300  0.66666700  0.25000000  1\n  C  C3  1  0.66666700  0.33333300  0.75000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 115.976,
+        "shear_modulus_GPa": 89.734,
+        "youngs_modulus_GPa": 214.00741543931164,
+        "poissons_ratio": 0.192,
+        "universal_anisotropy": 1244.456,
+        "debye_temperature_K": 1033.8205758623187,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 0.019117341026327606,
+        "work_function_eV": 5.025480570101199,
+        "surface_anisotropy": 21.066744572741296,
+        "shape_factor": 72.51049744764661,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "Amorphous + micropore-dominated surface area; DFT on graphite misses both. Treat EVS as chemistry-floor only; expect surface-area driven performance to dominate in practice."
     },
     {
@@ -560,6 +719,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46729100\n_cell_length_b   2.46729152\n_cell_length_c   7.80307300\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   120.00000639\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C4\n_cell_volume   41.13742607\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C0  1  0.00000000  0.00000000  0.25000000  1\n  C  C1  1  0.00000000  0.00000000  0.75000000  1\n  C  C2  1  0.33333300  0.66666700  0.25000000  1\n  C  C3  1  0.66666700  0.33333300  0.75000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 115.976,
+        "shear_modulus_GPa": 89.734,
+        "youngs_modulus_GPa": 214.00741543931164,
+        "poissons_ratio": 0.192,
+        "universal_anisotropy": 1244.456,
+        "debye_temperature_K": 1033.8205758623187,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 0.019117341026327606,
+        "work_function_eV": 5.025480570101199,
+        "surface_anisotropy": 21.066744572741296,
+        "shape_factor": 72.51049744764661,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "MP has no canonical SWNT/MWNT entry; graphite is the standard approximation. Real CNT properties depend on chirality and diameter \u2014 document in SCIENTIFIC_INTEGRITY.md."
     },
     {
@@ -603,6 +779,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46729100\n_cell_length_b   2.46729152\n_cell_length_c   7.80307300\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   120.00000639\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C4\n_cell_volume   41.13742607\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C0  1  0.00000000  0.00000000  0.25000000  1\n  C  C1  1  0.00000000  0.00000000  0.75000000  1\n  C  C2  1  0.33333300  0.66666700  0.25000000  1\n  C  C3  1  0.66666700  0.33333300  0.75000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 115.976,
+        "shear_modulus_GPa": 89.734,
+        "youngs_modulus_GPa": 214.00741543931164,
+        "poissons_ratio": 0.192,
+        "universal_anisotropy": 1244.456,
+        "debye_temperature_K": 1033.8205758623187,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 0.019117341026327606,
+        "work_function_eV": 5.025480570101199,
+        "surface_anisotropy": 21.066744572741296,
+        "shape_factor": 72.51049744764661,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "Oxygen functionalization radically changes properties; crystalline graphite is a weak proxy. Mark low-confidence explicitly."
     },
     {
@@ -646,6 +839,23 @@
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46729100\n_cell_length_b   2.46729152\n_cell_length_c   7.80307300\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   120.00000639\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C4\n_cell_volume   41.13742607\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C0  1  0.00000000  0.00000000  0.25000000  1\n  C  C1  1  0.00000000  0.00000000  0.75000000  1\n  C  C2  1  0.33333300  0.66666700  0.25000000  1\n  C  C3  1  0.66666700  0.33333300  0.75000000  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 115.976,
+        "shear_modulus_GPa": 89.734,
+        "youngs_modulus_GPa": 214.00741543931164,
+        "poissons_ratio": 0.192,
+        "universal_anisotropy": 1244.456,
+        "debye_temperature_K": 1033.8205758623187,
+        "source_functional": "PBE"
+      },
+      "surface": {
+        "weighted_surface_energy_J_per_m2": 0.019117341026327606,
+        "work_function_eV": 5.025480570101199,
+        "surface_anisotropy": 21.066744572741296,
+        "shape_factor": 72.51049744764661,
+        "has_reconstructed": false,
+        "source_functional": "PBE"
+      },
       "notes": "Typically carbon cloth + PTFE binder. Carbon-side chemistry only."
     }
   ]

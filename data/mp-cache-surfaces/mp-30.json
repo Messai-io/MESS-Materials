@@ -1,0 +1,210 @@
+{
+  "surfaces": [
+    {
+      "miller_index": [
+        1,
+        1,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09743073342757815,
+      "surface_energy": 1.5610123732127414,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.55920612\n_cell_length_b   3.60785800\n_cell_length_c   20.47365318\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu8\n_cell_volume   189.03840459\n_cell_formula_units_Z   8\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.000000  0.000000  0.875279  1\n  Cu  Cu2  1  0.000000  0.000000  0.998154  1\n  Cu  Cu3  1  0.500000  0.500000  0.940907  1\n  Cu  Cu4  1  0.500000  0.500000  0.813173  1\n  Cu  Cu5  1  0.000000  0.000000  0.621593  1\n  Cu  Cu6  1  0.000000  0.000000  0.749327  1\n  Cu  Cu7  1  0.500000  0.500000  0.687221  1\n  Cu  Cu8  1  0.500000  0.500000  0.564346  1\n",
+      "work_function": 4.1951322328411464,
+      "efermi": 1.23769417,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        2,
+        1,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.10150419713253184,
+      "surface_energy": 1.626276453873617,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   5.11437183\n_cell_length_b   6.26380066\n_cell_length_c   35.43340741\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu48\n_cell_volume   1135.12357980\n_cell_formula_units_Z   48\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.000000  0.994418  0.002763  1\n  Cu  Cu2  1  0.500000  0.336313  0.039200  1\n  Cu  Cu3  1  0.000000  0.668935  0.082666  1\n  Cu  Cu4  1  0.500000  0.999814  0.123543  1\n  Cu  Cu5  1  0.000000  0.333006  0.166096  1\n  Cu  Cu6  1  0.500000  0.666537  0.208073  1\n  Cu  Cu7  1  0.000000  0.335758  0.039386  1\n  Cu  Cu8  1  0.500000  0.668271  0.081998  1\n  Cu  Cu9  1  0.000000  0.000281  0.124073  1\n  Cu  Cu10  1  0.500000  0.332775  0.165971  1\n  Cu  Cu11  1  0.000000  0.666762  0.207875  1\n  Cu  Cu12  1  0.500000  0.999892  0.250118  1\n  Cu  Cu13  1  0.745447  0.005489  0.060546  1\n  Cu  Cu14  1  0.250031  0.333593  0.102920  1\n  Cu  Cu15  1  0.749212  0.666299  0.145034  1\n  Cu  Cu16  1  0.250558  0.999951  0.186943  1\n  Cu  Cu17  1  0.749785  0.333266  0.229066  1\n  Cu  Cu18  1  0.249949  0.667326  0.020779  1\n  Cu  Cu19  1  0.254553  0.005489  0.060546  1\n  Cu  Cu20  1  0.749969  0.333593  0.102920  1\n  Cu  Cu21  1  0.250788  0.666299  0.145034  1\n  Cu  Cu22  1  0.749442  0.999951  0.186943  1\n  Cu  Cu23  1  0.250215  0.333266  0.229066  1\n  Cu  Cu24  1  0.750051  0.667326  0.020779  1\n  Cu  Cu25  1  0.000000  0.000108  0.249882  1\n  Cu  Cu26  1  0.500000  0.333238  0.292125  1\n  Cu  Cu27  1  0.000000  0.667225  0.334029  1\n  Cu  Cu28  1  0.500000  0.999719  0.375927  1\n  Cu  Cu29  1  0.000000  0.331729  0.418002  1\n  Cu  Cu30  1  0.500000  0.664242  0.460614  1\n  Cu  Cu31  1  0.000000  0.333463  0.291927  1\n  Cu  Cu32  1  0.500000  0.666994  0.333904  1\n  Cu  Cu33  1  0.000000  0.000186  0.376457  1\n  Cu  Cu34  1  0.500000  0.331065  0.417334  1\n  Cu  Cu35  1  0.000000  0.663687  0.460800  1\n  Cu  Cu36  1  0.500000  0.005582  0.497237  1\n  Cu  Cu37  1  0.750558  0.000049  0.313057  1\n  Cu  Cu38  1  0.249212  0.333701  0.354966  1\n  Cu  Cu39  1  0.750031  0.666407  0.397080  1\n  Cu  Cu40  1  0.245447  0.994511  0.439454  1\n  Cu  Cu41  1  0.749949  0.332674  0.479221  1\n  Cu  Cu42  1  0.249785  0.666734  0.270934  1\n  Cu  Cu43  1  0.249442  0.000049  0.313057  1\n  Cu  Cu44  1  0.750788  0.333701  0.354966  1\n  Cu  Cu45  1  0.249969  0.666407  0.397080  1\n  Cu  Cu46  1  0.754553  0.994511  0.439454  1\n  Cu  Cu47  1  0.250051  0.332674  0.479221  1\n  Cu  Cu48  1  0.750215  0.666734  0.270934  1\n",
+      "work_function": 4.224450933335217,
+      "efermi": 1.3094,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        2,
+        1,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09966272811980564,
+      "surface_energy": 1.5967728689920546,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   3.61640700\n_cell_length_b   4.42917633\n_cell_length_c   32.34612755\n_cell_angle_alpha   90.00000579\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   114.09484728\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu20\n_cell_volume   472.96818440\n_cell_formula_units_Z   20\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.600007  0.200013  0.199691  1\n  Cu  Cu2  1  0.199556  0.399111  0.149047  1\n  Cu  Cu3  1  0.801709  0.603419  0.099014  1\n  Cu  Cu4  1  0.398832  0.797664  0.046929  1\n  Cu  Cu5  1  0.002780  0.005561  0.001697  1\n  Cu  Cu6  1  0.900244  0.800488  0.174657  1\n  Cu  Cu7  1  0.499936  0.999871  0.123838  1\n  Cu  Cu8  1  0.102404  0.204808  0.073703  1\n  Cu  Cu9  1  0.701036  0.402073  0.023163  1\n  Cu  Cu10  1  0.299836  0.599672  0.224601  1\n  Cu  Cu11  1  0.598964  0.197927  0.451837  1\n  Cu  Cu12  1  0.197596  0.395192  0.401297  1\n  Cu  Cu13  1  0.800064  0.600129  0.351162  1\n  Cu  Cu14  1  0.399756  0.799512  0.300343  1\n  Cu  Cu15  1  0.000164  0.000328  0.250399  1\n  Cu  Cu16  1  0.901168  0.802336  0.428071  1\n  Cu  Cu17  1  0.498291  0.996581  0.375986  1\n  Cu  Cu18  1  0.100444  0.200889  0.325953  1\n  Cu  Cu19  1  0.699993  0.399987  0.275309  1\n  Cu  Cu20  1  0.297220  0.594439  0.473303  1\n",
+      "work_function": 4.175950338158681,
+      "efermi": 1.3445,
+      "area_fraction": 0.02670743922858003,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        2,
+        2,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09223302276383714,
+      "surface_energy": 1.4777358713016628,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.55785734\n_cell_length_b   7.66811551\n_cell_length_c   21.68843617\n_cell_angle_alpha   90.05928252\n_cell_angle_beta   90.03363508\n_cell_angle_gamma   89.94693776\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu18\n_cell_volume   425.39532277\n_cell_formula_units_Z   18\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.000454  0.446328  0.946302  1\n  Cu  Cu2  1  0.000173  0.890920  0.888457  1\n  Cu  Cu3  1  0.000378  0.995728  0.996252  1\n  Cu  Cu4  1  0.000018  0.332558  0.833892  1\n  Cu  Cu5  1  0.000026  0.777708  0.777801  1\n  Cu  Cu6  1  0.999995  0.221603  0.722035  1\n  Cu  Cu7  1  0.999894  0.667266  0.666159  1\n  Cu  Cu8  1  0.999787  0.104526  0.608402  1\n  Cu  Cu9  1  0.999442  0.556547  0.555243  1\n  Cu  Cu10  1  0.500106  0.610512  0.861619  1\n  Cu  Cu11  1  0.500005  0.056175  0.805742  1\n  Cu  Cu12  1  0.500213  0.173252  0.919376  1\n  Cu  Cu13  1  0.499974  0.500070  0.749977  1\n  Cu  Cu14  1  0.499983  0.945219  0.693886  1\n  Cu  Cu15  1  0.499825  0.386858  0.639321  1\n  Cu  Cu16  1  0.499547  0.831449  0.581476  1\n  Cu  Cu17  1  0.499622  0.282050  0.531526  1\n  Cu  Cu18  1  0.500558  0.721231  0.972534  1\n",
+      "work_function": 4.355677495117612,
+      "efermi": 1.2355,
+      "area_fraction": 0.06338787065801077,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        1,
+        1,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.0835440316766008,
+      "surface_energy": 1.3385228928014727,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.55767700\n_cell_length_b   2.55767789\n_cell_length_c   37.59002800\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   120.00000137\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu9\n_cell_volume   212.95842335\n_cell_formula_units_Z   9\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.666667  0.333333  0.333144  1\n  Cu  Cu2  1  0.333333  0.666667  0.277675  1\n  Cu  Cu3  1  -0.000000  -0.000000  0.388697  1\n  Cu  Cu4  1  0.666667  0.333333  0.500000  1\n  Cu  Cu5  1  0.333333  0.666667  0.444307  1\n  Cu  Cu6  1  -0.000000  -0.000000  0.555693  1\n  Cu  Cu7  1  0.666667  0.333333  0.666856  1\n  Cu  Cu8  1  0.333333  0.666667  0.611303  1\n  Cu  Cu9  1  0.000000  -0.000000  0.722325  1\n",
+      "work_function": 4.711050271840816,
+      "efermi": 1.07658139,
+      "area_fraction": 0.4526771682139064,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        3,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09463770318395047,
+      "surface_energy": 1.516263097335628,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.55700136\n_cell_length_b   5.71719057\n_cell_length_c   29.92885335\n_cell_angle_alpha   86.71251712\n_cell_angle_beta   87.55169268\n_cell_angle_gamma   77.07802593\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu18\n_cell_volume   425.54298653\n_cell_formula_units_Z   18\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.068074  0.598249  0.265606  1\n  Cu  Cu2  1  0.375864  0.958758  0.289513  1\n  Cu  Cu3  1  0.597743  0.402692  0.401822  1\n  Cu  Cu4  1  0.685112  0.313083  0.316694  1\n  Cu  Cu5  1  0.986945  0.679718  0.346395  1\n  Cu  Cu6  1  0.291653  0.042824  0.373868  1\n  Cu  Cu7  1  0.902853  0.764410  0.429887  1\n  Cu  Cu8  1  0.208521  0.124966  0.457990  1\n  Cu  Cu9  1  0.430481  0.568924  0.570114  1\n  Cu  Cu10  1  0.513806  0.486478  0.485911  1\n  Cu  Cu11  1  0.819528  0.846856  0.514089  1\n  Cu  Cu12  1  0.124811  0.208366  0.542010  1\n  Cu  Cu13  1  0.735591  0.930642  0.598178  1\n  Cu  Cu14  1  0.041679  0.290508  0.626132  1\n  Cu  Cu15  1  0.265260  0.735085  0.734394  1\n  Cu  Cu16  1  0.346389  0.653616  0.653605  1\n  Cu  Cu17  1  0.648222  0.020251  0.683306  1\n  Cu  Cu18  1  0.957468  0.374574  0.710487  1\n",
+      "work_function": 4.306427229404758,
+      "efermi": 1.2123,
+      "area_fraction": 0.055308514969429255,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        1,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09614870133146901,
+      "surface_energy": 1.5404719554772042,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.55691368\n_cell_length_b   4.42859255\n_cell_length_c   26.19734870\n_cell_angle_alpha   88.37900301\n_cell_angle_beta   87.20279759\n_cell_angle_gamma   73.22089924\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu12\n_cell_volume   283.64699426\n_cell_formula_units_Z   12\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.351680  0.944040  0.352601  1\n  Cu  Cu2  1  0.935960  0.855842  0.272238  1\n  Cu  Cu3  1  0.646629  0.397816  0.308926  1\n  Cu  Cu4  1  0.479035  0.562687  0.479243  1\n  Cu  Cu5  1  0.061932  0.481405  0.394730  1\n  Cu  Cu6  1  0.770793  0.021918  0.436496  1\n  Cu  Cu7  1  0.604735  0.185262  0.605270  1\n  Cu  Cu8  1  0.187632  0.103980  0.520757  1\n  Cu  Cu9  1  0.895873  0.644748  0.563504  1\n  Cu  Cu10  1  0.730707  0.810825  0.727762  1\n  Cu  Cu11  1  0.314987  0.722627  0.647399  1\n  Cu  Cu12  1  0.020037  0.268850  0.691074  1\n",
+      "work_function": 4.278083914231574,
+      "efermi": 1.3022,
+      "area_fraction": 0.09835911897242403,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        2,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09850643160058666,
+      "surface_energy": 1.5782469571970321,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   4.42860193\n_cell_length_b   5.71730504\n_cell_length_c   23.29390424\n_cell_angle_alpha   92.81334257\n_cell_angle_beta   93.63299016\n_cell_angle_gamma   104.96344386\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu24\n_cell_volume   567.33793673\n_cell_formula_units_Z   24\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.908646  0.273140  0.363925  1\n  Cu  Cu2  1  0.157507  0.104850  0.282244  1\n  Cu  Cu3  1  0.032103  0.688992  0.320866  1\n  Cu  Cu4  1  0.594365  0.895277  0.300873  1\n  Cu  Cu5  1  0.466459  0.484664  0.341070  1\n  Cu  Cu6  1  0.719501  0.309257  0.264691  1\n  Cu  Cu7  1  0.530675  0.020673  0.489622  1\n  Cu  Cu8  1  0.779912  0.852770  0.405919  1\n  Cu  Cu9  1  0.656101  0.436565  0.447280  1\n  Cu  Cu10  1  0.219366  0.644453  0.426874  1\n  Cu  Cu11  1  0.092274  0.228956  0.468194  1\n  Cu  Cu12  1  0.343324  0.061194  0.385196  1\n  Cu  Cu13  1  0.156676  0.772139  0.614804  1\n  Cu  Cu14  1  0.407726  0.604378  0.531806  1\n  Cu  Cu15  1  0.280634  0.188880  0.573126  1\n  Cu  Cu16  1  0.843899  0.396768  0.552720  1\n  Cu  Cu17  1  0.720088  0.980564  0.594081  1\n  Cu  Cu18  1  0.969325  0.812660  0.510378  1\n  Cu  Cu19  1  0.780499  0.524076  0.735309  1\n  Cu  Cu20  1  0.033541  0.348670  0.658930  1\n  Cu  Cu21  1  0.905635  0.938056  0.699127  1\n  Cu  Cu22  1  0.467897  0.144341  0.679134  1\n  Cu  Cu23  1  0.342493  0.728484  0.717756  1\n  Cu  Cu24  1  0.591354  0.560193  0.636075  1\n",
+      "work_function": 4.2168904274191465,
+      "efermi": 1.3022,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        2,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.1011694423551195,
+      "surface_energy": 1.6209130912964365,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   3.61507300\n_cell_length_b   6.75955603\n_cell_length_c   30.17108415\n_cell_angle_alpha   88.20409201\n_cell_angle_beta   86.56537912\n_cell_angle_gamma   74.49011970\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu30\n_cell_volume   709.05517961\n_cell_formula_units_Z   30\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.401032  0.823775  0.374161  1\n  Cu  Cu2  1  0.399941  0.658236  0.541882  1\n  Cu  Cu3  1  0.398205  0.493674  0.709916  1\n  Cu  Cu4  1  0.201081  0.292279  0.305559  1\n  Cu  Cu5  1  0.200089  0.125003  0.474819  1\n  Cu  Cu6  1  0.199443  0.958587  0.642528  1\n  Cu  Cu7  1  0.999963  0.260770  0.739304  1\n  Cu  Cu8  1  0.000247  0.592117  0.407390  1\n  Cu  Cu9  1  0.999770  0.424916  0.575545  1\n  Cu  Cu10  1  0.801641  0.055882  0.340835  1\n  Cu  Cu11  1  0.799896  0.891687  0.508521  1\n  Cu  Cu12  1  0.799218  0.723359  0.678205  1\n  Cu  Cu13  1  0.600758  0.522831  0.275653  1\n  Cu  Cu14  1  0.600269  0.358234  0.441227  1\n  Cu  Cu15  1  0.599611  0.191437  0.609340  1\n  Cu  Cu16  1  0.000782  0.676641  0.321795  1\n  Cu  Cu17  1  0.000104  0.508313  0.491479  1\n  Cu  Cu18  1  0.998359  0.344118  0.659165  1\n  Cu  Cu19  1  0.800037  0.139230  0.260696  1\n  Cu  Cu20  1  0.800230  0.975084  0.424455  1\n  Cu  Cu21  1  0.799753  0.807883  0.592610  1\n  Cu  Cu22  1  0.600557  0.441413  0.357472  1\n  Cu  Cu23  1  0.599911  0.274997  0.525181  1\n  Cu  Cu24  1  0.598919  0.107721  0.694441  1\n  Cu  Cu25  1  0.401795  0.906326  0.290084  1\n  Cu  Cu26  1  0.400059  0.741764  0.458118  1\n  Cu  Cu27  1  0.398968  0.576225  0.625839  1\n  Cu  Cu28  1  0.200389  0.208563  0.390660  1\n  Cu  Cu29  1  0.199731  0.041766  0.558773  1\n  Cu  Cu30  1  0.199242  0.877169  0.724347  1\n",
+      "work_function": 4.266856280928886,
+      "efermi": 1.2954,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        2,
+        2
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09073013232900963,
+      "surface_energy": 1.4536569130323742,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.55595767\n_cell_length_b   10.53803858\n_cell_length_c   21.07984669\n_cell_angle_alpha   93.37195116\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu24\n_cell_volume   566.79806801\n_cell_formula_units_Z   24\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  1.000000  0.725257  0.364372  1\n  Cu  Cu2  1  1.000000  0.309305  0.322280  1\n  Cu  Cu3  1  1.000000  0.897331  0.280828  1\n  Cu  Cu4  1  0.500000  0.516231  0.339661  1\n  Cu  Cu5  1  0.500000  0.103509  0.301623  1\n  Cu  Cu6  1  0.500000  0.693280  0.263837  1\n  Cu  Cu7  1  0.000000  0.979227  0.489598  1\n  Cu  Cu8  1  1.000000  0.561806  0.447415  1\n  Cu  Cu9  1  1.000000  0.145330  0.406034  1\n  Cu  Cu10  1  0.500000  0.770298  0.468843  1\n  Cu  Cu11  1  0.500000  0.354379  0.426216  1\n  Cu  Cu12  1  0.500000  0.936471  0.385285  1\n  Cu  Cu13  1  0.000000  0.230198  0.614724  1\n  Cu  Cu14  1  0.000000  0.812345  0.573862  1\n  Cu  Cu15  1  1.000000  0.396525  0.531085  1\n  Cu  Cu16  1  0.500000  0.021307  0.593924  1\n  Cu  Cu17  1  0.500000  0.604900  0.552525  1\n  Cu  Cu18  1  0.500000  0.187393  0.510355  1\n  Cu  Cu19  1  0.000000  0.473326  0.736174  1\n  Cu  Cu20  1  0.000000  0.063200  0.698431  1\n  Cu  Cu21  1  0.000000  0.650381  0.660380  1\n  Cu  Cu22  1  0.500000  0.269417  0.719207  1\n  Cu  Cu23  1  0.500000  0.857189  0.677735  1\n  Cu  Cu24  1  0.500000  0.441396  0.635608  1\n",
+      "work_function": 4.37963947922625,
+      "efermi": 1.2116036,
+      "area_fraction": 0.047673814621882006,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        3,
+        2
+      ],
+      "surface_energy_EV_PER_ANG2": 0.08954950041723508,
+      "surface_energy": 1.4347411052820425,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.55699287\n_cell_length_b   11.99284469\n_cell_length_c   37.40451397\n_cell_angle_alpha   98.38132949\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu48\n_cell_volume   1134.78211017\n_cell_formula_units_Z   48\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.000000  0.111072  0.734560  1\n  Cu  Cu2  1  0.000000  0.942873  0.568109  1\n  Cu  Cu3  1  0.000000  0.775330  0.400541  1\n  Cu  Cu4  1  0.000000  0.812759  0.694351  1\n  Cu  Cu5  1  0.000000  0.650802  0.526138  1\n  Cu  Cu6  1  0.000000  0.482702  0.358773  1\n  Cu  Cu7  1  0.000000  0.463219  0.713977  1\n  Cu  Cu8  1  0.000000  0.296880  0.547063  1\n  Cu  Cu9  1  0.000000  0.130148  0.379876  1\n  Cu  Cu10  1  0.000000  0.171888  0.672307  1\n  Cu  Cu11  1  0.000000  0.005385  0.505372  1\n  Cu  Cu12  1  0.000000  0.837800  0.338041  1\n  Cu  Cu13  1  0.000000  0.879929  0.630633  1\n  Cu  Cu14  1  0.000000  0.713655  0.463450  1\n  Cu  Cu15  1  0.000000  0.548536  0.295597  1\n  Cu  Cu16  1  0.000000  0.252459  0.257386  1\n  Cu  Cu17  1  0.000000  0.588857  0.588957  1\n  Cu  Cu18  1  0.000000  0.421702  0.421689  1\n  Cu  Cu19  1  0.000000  0.528017  0.651737  1\n  Cu  Cu20  1  0.000000  0.359338  0.484247  1\n  Cu  Cu21  1  0.000000  0.194441  0.317857  1\n  Cu  Cu22  1  0.000000  0.234827  0.609864  1\n  Cu  Cu23  1  0.000000  0.067493  0.442365  1\n  Cu  Cu24  1  0.000000  0.900805  0.275735  1\n  Cu  Cu25  1  0.500000  0.993058  0.682143  1\n  Cu  Cu26  1  0.500000  0.828162  0.515753  1\n  Cu  Cu27  1  0.500000  0.659483  0.348263  1\n  Cu  Cu28  1  0.500000  0.704798  0.641227  1\n  Cu  Cu29  1  0.500000  0.536698  0.473862  1\n  Cu  Cu30  1  0.500000  0.374741  0.305649  1\n  Cu  Cu31  1  0.500000  0.349700  0.661959  1\n  Cu  Cu32  1  0.500000  0.182115  0.494628  1\n  Cu  Cu33  1  0.500000  0.015612  0.327693  1\n  Cu  Cu34  1  0.500000  0.057352  0.620124  1\n  Cu  Cu35  1  0.500000  0.890620  0.452937  1\n  Cu  Cu36  1  0.500000  0.724281  0.286023  1\n  Cu  Cu37  1  0.500000  0.935041  0.742614  1\n  Cu  Cu38  1  0.500000  0.765798  0.578311  1\n  Cu  Cu39  1  0.500000  0.598643  0.411043  1\n  Cu  Cu40  1  0.500000  0.638964  0.704403  1\n  Cu  Cu41  1  0.500000  0.473845  0.536550  1\n  Cu  Cu42  1  0.500000  0.307571  0.369367  1\n  Cu  Cu43  1  0.500000  0.412170  0.599459  1\n  Cu  Cu44  1  0.500000  0.244627  0.431891  1\n  Cu  Cu45  1  0.500000  0.076428  0.265440  1\n  Cu  Cu46  1  0.500000  0.286695  0.724265  1\n  Cu  Cu47  1  0.500000  0.120007  0.557635  1\n  Cu  Cu48  1  0.500000  0.952673  0.390136  1\n",
+      "work_function": 4.5255519576833185,
+      "efermi": 1.16499242,
+      "area_fraction": 0.054536751826548616,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        3,
+        1,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09917919219792386,
+      "surface_energy": 1.5890257697924848,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   3.61640700\n_cell_length_b   5.71804217\n_cell_length_c   27.54173556\n_cell_angle_alpha   94.76364043\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu30\n_cell_volume   567.56186183\n_cell_formula_units_Z   30\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.000000  0.190500  0.255369  1\n  Cu  Cu2  1  0.000000  0.767781  0.217598  1\n  Cu  Cu3  1  0.000000  0.597920  0.299366  1\n  Cu  Cu4  1  0.500000  0.477031  0.235342  1\n  Cu  Cu5  1  0.500000  0.053510  0.198698  1\n  Cu  Cu6  1  0.500000  0.890630  0.278676  1\n  Cu  Cu7  1  0.000000  0.436625  0.383909  1\n  Cu  Cu8  1  0.000000  0.019678  0.341344  1\n  Cu  Cu9  1  0.000000  0.853977  0.425986  1\n  Cu  Cu10  1  0.500000  0.727856  0.362650  1\n  Cu  Cu11  1  0.500000  0.308860  0.320436  1\n  Cu  Cu12  1  0.500000  0.144957  0.404948  1\n  Cu  Cu13  1  0.000000  0.687740  0.510473  1\n  Cu  Cu14  1  0.000000  0.270520  0.468232  1\n  Cu  Cu15  1  0.000000  0.104559  0.552828  1\n  Cu  Cu16  1  0.500000  0.978926  0.489527  1\n  Cu  Cu17  1  0.500000  0.562107  0.447172  1\n  Cu  Cu18  1  0.500000  0.396148  0.531768  1\n  Cu  Cu19  1  0.000000  0.938810  0.637350  1\n  Cu  Cu20  1  0.000000  0.521711  0.595052  1\n  Cu  Cu21  1  0.000000  0.357806  0.679564  1\n  Cu  Cu22  1  0.500000  0.230041  0.616091  1\n  Cu  Cu23  1  0.500000  0.812689  0.574014  1\n  Cu  Cu24  1  0.500000  0.646990  0.658656  1\n  Cu  Cu25  1  0.000000  0.189635  0.764658  1\n  Cu  Cu26  1  0.000000  0.776038  0.721324  1\n  Cu  Cu27  1  0.000000  0.613156  0.801302  1\n  Cu  Cu28  1  0.500000  0.476166  0.744631  1\n  Cu  Cu29  1  0.500000  0.068746  0.700634  1\n  Cu  Cu30  1  0.500000  0.898887  0.782402  1\n",
+      "work_function": 4.171091298618956,
+      "efermi": 2.6885,
+      "area_fraction": 0.006776502874236242,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        1,
+        0,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.09174822044368236,
+      "surface_energy": 1.4699684821658066,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_Cu\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.55671900\n_cell_length_b   2.55671900\n_cell_length_c   36.15746600\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Cu\n_chemical_formula_sum   Cu10\n_cell_volume   236.35455926\n_cell_formula_units_Z   10\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Cu  Cu1  1  0.000000  0.000000  0.677500  1\n  Cu  Cu2  1  0.500000  0.500000  0.726649  1\n  Cu  Cu3  1  0.000000  0.000000  0.576089  1\n  Cu  Cu4  1  0.500000  0.500000  0.626786  1\n  Cu  Cu5  1  0.000000  0.000000  0.474547  1\n  Cu  Cu6  1  0.500000  0.500000  0.525453  1\n  Cu  Cu7  1  0.000000  0.000000  0.373214  1\n  Cu  Cu8  1  0.500000  0.500000  0.423911  1\n  Cu  Cu9  1  0.000000  0.000000  0.273351  1\n  Cu  Cu10  1  0.500000  0.500000  0.322500  1\n",
+      "work_function": 4.4743256339064805,
+      "efermi": 1.20497679,
+      "area_fraction": 0.1945728186349826,
+      "has_wulff": true
+    }
+  ],
+  "weighted_surface_energy_EV_PER_ANG2": 0.08875102755621303,
+  "pretty_formula": "Cu",
+  "weighted_surface_energy": 1.4219481602647859,
+  "surface_anisotropy": 0.05770385722138485,
+  "shape_factor": 5.0701625003456945,
+  "weighted_work_function": 4.533632204404293,
+  "has_reconstructed": false,
+  "material_id": "mp-30",
+  "fields_not_requested": [
+    "structure"
+  ]
+}

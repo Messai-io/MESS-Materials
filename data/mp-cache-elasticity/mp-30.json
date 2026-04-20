@@ -1,0 +1,23 @@
+{
+  "material_id": "mp-30",
+  "bulk_modulus": {
+    "voigt": 151.394,
+    "reuss": 151.394,
+    "vrh": 151.394
+  },
+  "shear_modulus": {
+    "voigt": 56.617,
+    "reuss": 43.07,
+    "vrh": 49.843
+  },
+  "youngs_modulus": null,
+  "homogeneous_poisson": 0.352,
+  "universal_anisotropy": 1.573,
+  "debye_temperature": 348.09711384343245,
+  "state": {
+    "value": "successful",
+    "@module": "emmet.core.types.enums",
+    "@class": "TaskState",
+    "@version": null
+  }
+}

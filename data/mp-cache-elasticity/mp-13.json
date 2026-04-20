@@ -1,0 +1,23 @@
+{
+  "material_id": "mp-13",
+  "bulk_modulus": {
+    "voigt": 207.747,
+    "reuss": 206.439,
+    "vrh": 207.093
+  },
+  "shear_modulus": {
+    "voigt": 72.977,
+    "reuss": 62.148,
+    "vrh": 67.563
+  },
+  "youngs_modulus": null,
+  "homogeneous_poisson": 0.353,
+  "universal_anisotropy": 0.878,
+  "debye_temperature": 428.9834606726175,
+  "state": {
+    "value": "successful",
+    "@module": "emmet.core.types.enums",
+    "@class": "TaskState",
+    "@version": null
+  }
+}

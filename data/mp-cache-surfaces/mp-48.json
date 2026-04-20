@@ -1,0 +1,175 @@
+{
+  "surfaces": [
+    {
+      "miller_index": [
+        2,
+        1,
+        -3,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.3048303674398873,
+      "surface_energy": 4.883920694883746,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   7.18943700\n_cell_length_b   6.52000720\n_cell_length_c   24.64360500\n_cell_angle_alpha   79.10646703\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C60\n_cell_volume   1134.35727791\n_cell_formula_units_Z   60\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C1  1  0.750000  0.676617  0.064225  1\n  C  C2  1  0.750000  0.349468  0.036442  1\n  C  C3  1  0.750000  0.000726  0.099961  1\n  C  C4  1  0.250000  0.664764  0.066554  1\n  C  C5  1  0.250000  0.332816  0.035852  1\n  C  C6  1  0.250000  0.987024  0.003769  1\n  C  C7  1  0.750000  0.542983  0.025980  1\n  C  C8  1  0.750000  0.220656  0.088745  1\n  C  C9  1  0.750000  0.888800  0.058000  1\n  C  C10  1  0.250000  0.793544  0.014265  1\n  C  C11  1  0.250000  0.444912  0.077795  1\n  C  C12  1  0.250000  0.120712  0.042043  1\n  C  C13  1  0.750000  0.667609  0.166214  1\n  C  C14  1  0.750000  0.335901  0.132672  1\n  C  C15  1  0.750000  0.001192  0.200012  1\n  C  C16  1  0.250000  0.667652  0.166527  1\n  C  C17  1  0.250000  0.333171  0.133726  1\n  C  C18  1  0.250000  0.002348  0.099344  1\n  C  C19  1  0.750000  0.558153  0.121528  1\n  C  C20  1  0.750000  0.223436  0.188728  1\n  C  C21  1  0.750000  0.888936  0.155905  1\n  C  C22  1  0.250000  0.780099  0.110478  1\n  C  C23  1  0.250000  0.445422  0.177823  1\n  C  C24  1  0.250000  0.111821  0.144014  1\n  C  C25  1  0.750000  0.666442  0.266457  1\n  C  C26  1  0.750000  0.333781  0.233198  1\n  C  C27  1  0.750000  0.000009  0.300069  1\n  C  C28  1  0.250000  0.666219  0.266802  1\n  C  C29  1  0.250000  0.333558  0.233543  1\n  C  C30  1  0.250000  0.999991  0.199931  1\n  C  C31  1  0.750000  0.555746  0.222124  1\n  C  C32  1  0.750000  0.221960  0.288993  1\n  C  C33  1  0.750000  0.889290  0.255725  1\n  C  C34  1  0.250000  0.778040  0.211007  1\n  C  C35  1  0.250000  0.444254  0.277876  1\n  C  C36  1  0.250000  0.110710  0.244275  1\n  C  C37  1  0.750000  0.666829  0.366274  1\n  C  C38  1  0.750000  0.332348  0.333473  1\n  C  C39  1  0.750000  0.997652  0.400656  1\n  C  C40  1  0.250000  0.664099  0.367328  1\n  C  C41  1  0.250000  0.332391  0.333786  1\n  C  C42  1  0.250000  0.998808  0.299988  1\n  C  C43  1  0.750000  0.554578  0.322177  1\n  C  C44  1  0.750000  0.219901  0.389522  1\n  C  C45  1  0.750000  0.888179  0.355986  1\n  C  C46  1  0.250000  0.776564  0.311272  1\n  C  C47  1  0.250000  0.441847  0.378472  1\n  C  C48  1  0.250000  0.111064  0.344095  1\n  C  C49  1  0.750000  0.667184  0.464148  1\n  C  C50  1  0.750000  0.335236  0.433446  1\n  C  C51  1  0.750000  0.012976  0.496231  1\n  C  C52  1  0.250000  0.650532  0.463558  1\n  C  C53  1  0.250000  0.323383  0.435775  1\n  C  C54  1  0.250000  0.999274  0.400039  1\n  C  C55  1  0.750000  0.555088  0.422205  1\n  C  C56  1  0.750000  0.206456  0.485735  1\n  C  C57  1  0.750000  0.879288  0.457957  1\n  C  C58  1  0.250000  0.779344  0.411255  1\n  C  C59  1  0.250000  0.457017  0.474020  1\n  C  C60  1  0.250000  0.111200  0.442000  1\n",
+      "work_function": 6.006529804859157,
+      "efermi": -1.25320518,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": -0.0011991076883052475,
+      "surface_energy": -0.019211822311184533,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46402727\n_cell_length_b   2.46402727\n_cell_length_c   28.72871700\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   119.99998038\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C8\n_cell_volume   151.05599589\n_cell_formula_units_Z   8\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C1  1  0.000000  0.000000  0.969112  1\n  C  C2  1  0.000000  0.000000  0.177933  1\n  C  C3  1  0.333333  0.666667  0.969101  1\n  C  C4  1  0.666667  0.333333  0.177928  1\n  C  C5  1  0.000000  0.000000  0.322067  1\n  C  C6  1  0.000000  0.000000  0.530888  1\n  C  C7  1  0.333333  0.666667  0.322072  1\n  C  C8  1  0.666667  0.333333  0.530899  1\n",
+      "work_function": 5.023820402581347,
+      "efermi": -0.146658,
+      "area_fraction": 0.9910237916302269,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.44702557080648564,
+      "surface_energy": 7.162138912667715,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46402367\n_cell_length_b   7.18219500\n_cell_length_c   24.64023600\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   59.99999559\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C20\n_cell_volume   377.63961259\n_cell_formula_units_Z   20\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C1  1  0.077309  0.250000  0.984538  1\n  C  C2  1  0.901478  0.750000  0.019704  1\n  C  C3  1  0.435424  0.250000  0.012915  1\n  C  C4  1  0.579250  0.750000  0.084150  1\n  C  C5  1  0.090127  0.250000  0.081975  1\n  C  C6  1  0.906130  0.750000  0.118774  1\n  C  C7  1  0.426509  0.250000  0.114698  1\n  C  C8  1  0.577489  0.750000  0.184503  1\n  C  C9  1  0.090276  0.250000  0.181945  1\n  C  C10  1  0.907751  0.750000  0.218450  1\n  C  C11  1  0.424518  0.250000  0.215096  1\n  C  C12  1  0.578032  0.750000  0.284394  1\n  C  C13  1  0.088239  0.250000  0.282352  1\n  C  C14  1  0.908356  0.750000  0.318329  1\n  C  C15  1  0.424099  0.250000  0.315180  1\n  C  C16  1  0.579641  0.750000  0.384072  1\n  C  C17  1  0.079163  0.250000  0.384167  1\n  C  C18  1  0.907536  0.750000  0.418493  1\n  C  C19  1  0.432881  0.250000  0.413423  1\n  C  C20  1  0.585789  0.750000  0.482843  1\n",
+      "work_function": 6.857599382288348,
+      "efermi": -1.50953423,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.3539889364133344,
+      "surface_energy": 5.671527764207748,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46446946\n_cell_length_b   7.59349423\n_cell_length_c   24.64468800\n_cell_angle_alpha   99.33897563\n_cell_angle_beta   59.99999271\n_cell_angle_gamma   80.66103059\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C20\n_cell_volume   377.78942263\n_cell_formula_units_Z   20\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C1  1  0.779565  0.207971  0.023290  1\n  C  C2  1  0.292999  0.718381  0.069562  1\n  C  C3  1  0.128967  0.213588  0.052847  1\n  C  C4  1  0.943097  0.714827  0.039898  1\n  C  C5  1  0.770785  0.227082  0.123135  1\n  C  C6  1  0.267050  0.735854  0.173005  1\n  C  C7  1  0.101029  0.233331  0.156461  1\n  C  C8  1  0.936494  0.730125  0.139689  1\n  C  C9  1  0.752447  0.245961  0.224914  1\n  C  C10  1  0.247553  0.754039  0.275086  1\n  C  C11  1  0.081033  0.252053  0.258588  1\n  C  C12  1  0.918967  0.747947  0.241412  1\n  C  C13  1  0.732950  0.264146  0.326995  1\n  C  C14  1  0.229215  0.772918  0.376865  1\n  C  C15  1  0.063506  0.269875  0.360311  1\n  C  C16  1  0.898971  0.766669  0.343539  1\n  C  C17  1  0.707001  0.281619  0.430438  1\n  C  C18  1  0.220435  0.792029  0.476710  1\n  C  C19  1  0.056903  0.285173  0.460102  1\n  C  C20  1  0.871033  0.786412  0.447153  1\n",
+      "work_function": 6.042359254945812,
+      "efermi": -1.05,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        2,
+        -1,
+        -1,
+        2
+      ],
+      "surface_energy_EV_PER_ANG2": 0.26531858216681453,
+      "surface_energy": 4.250872132801042,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   4.26817390\n_cell_length_b   7.60324560\n_cell_length_c   24.64622902\n_cell_angle_alpha   108.91433351\n_cell_angle_beta   90.00000594\n_cell_angle_gamma   89.99999650\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C40\n_cell_volume   756.63201540\n_cell_formula_units_Z   40\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C1  1  0.975626  0.677767  0.068691  1\n  C  C2  1  0.493727  0.658282  0.021305  1\n  C  C3  1  0.006273  0.158282  0.021305  1\n  C  C4  1  0.524374  0.177767  0.068691  1\n  C  C5  1  0.302006  0.677674  0.068686  1\n  C  C6  1  0.783686  0.658612  0.021379  1\n  C  C7  1  0.197994  0.177674  0.068686  1\n  C  C8  1  0.716314  0.158612  0.021379  1\n  C  C9  1  0.972893  0.719378  0.172384  1\n  C  C10  1  0.472576  0.698673  0.120563  1\n  C  C11  1  0.027424  0.198673  0.120563  1\n  C  C12  1  0.527107  0.219378  0.172384  1\n  C  C13  1  0.304961  0.719380  0.172388  1\n  C  C14  1  0.805137  0.698694  0.120572  1\n  C  C15  1  0.195039  0.219380  0.172388  1\n  C  C16  1  0.694863  0.198694  0.120572  1\n  C  C17  1  0.972141  0.760126  0.275797  1\n  C  C18  1  0.472141  0.739874  0.224203  1\n  C  C19  1  0.027859  0.239874  0.224203  1\n  C  C20  1  0.527859  0.260126  0.275797  1\n  C  C21  1  0.305775  0.760146  0.275797  1\n  C  C22  1  0.805775  0.739854  0.224203  1\n  C  C23  1  0.194225  0.260146  0.275797  1\n  C  C24  1  0.694225  0.239854  0.224203  1\n  C  C25  1  0.972576  0.801327  0.379437  1\n  C  C26  1  0.472893  0.780622  0.327616  1\n  C  C27  1  0.027107  0.280622  0.327616  1\n  C  C28  1  0.527424  0.301327  0.379437  1\n  C  C29  1  0.305137  0.801306  0.379428  1\n  C  C30  1  0.804961  0.780620  0.327612  1\n  C  C31  1  0.194863  0.301306  0.379428  1\n  C  C32  1  0.695039  0.280620  0.327612  1\n  C  C33  1  0.993727  0.841718  0.478695  1\n  C  C34  1  0.475626  0.822233  0.431309  1\n  C  C35  1  0.024374  0.322233  0.431309  1\n  C  C36  1  0.506273  0.341718  0.478695  1\n  C  C37  1  0.283686  0.841388  0.478621  1\n  C  C38  1  0.802006  0.822326  0.431314  1\n  C  C39  1  0.216314  0.341388  0.478621  1\n  C  C40  1  0.697994  0.322326  0.431314  1\n",
+      "work_function": 5.208772383580679,
+      "efermi": -0.7506,
+      "area_fraction": 0.008976208369773088,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        1,
+        1,
+        -2,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.27744772482617847,
+      "surface_energy": 4.445202413418332,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   4.26799700\n_cell_length_b   7.60527415\n_cell_length_c   24.64459100\n_cell_angle_alpha   99.32434302\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   73.70430339\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C40\n_cell_volume   756.79071387\n_cell_formula_units_Z   40\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C1  1  0.853655  0.248994  0.016222  1\n  C  C2  1  0.371747  0.249464  0.061993  1\n  C  C3  1  0.647155  0.749424  0.041338  1\n  C  C4  1  0.128682  0.749711  0.087095  1\n  C  C5  1  0.045504  0.249295  0.061989  1\n  C  C6  1  0.563430  0.249501  0.016212  1\n  C  C7  1  0.455069  0.749688  0.087101  1\n  C  C8  1  0.937243  0.749296  0.041274  1\n  C  C9  1  0.874770  0.249708  0.112189  1\n  C  C10  1  0.374462  0.249946  0.162332  1\n  C  C11  1  0.625448  0.749890  0.137285  1\n  C  C12  1  0.125617  0.749952  0.187421  1\n  C  C13  1  0.042336  0.249914  0.162332  1\n  C  C14  1  0.542167  0.249747  0.112183  1\n  C  C15  1  0.457711  0.749981  0.187425  1\n  C  C16  1  0.958025  0.749894  0.137277  1\n  C  C17  1  0.875206  0.249987  0.212492  1\n  C  C18  1  0.375197  0.249997  0.262430  1\n  C  C19  1  0.624803  0.750003  0.237570  1\n  C  C20  1  0.124794  0.750013  0.287508  1\n  C  C21  1  0.041543  0.250009  0.262433  1\n  C  C22  1  0.541558  0.249984  0.212489  1\n  C  C23  1  0.458442  0.750016  0.287511  1\n  C  C24  1  0.958457  0.749991  0.237567  1\n  C  C25  1  0.874383  0.250048  0.312579  1\n  C  C26  1  0.374552  0.250110  0.362715  1\n  C  C27  1  0.625538  0.750054  0.337668  1\n  C  C28  1  0.125230  0.750292  0.387811  1\n  C  C29  1  0.041975  0.250106  0.362723  1\n  C  C30  1  0.542289  0.250019  0.312575  1\n  C  C31  1  0.457833  0.750253  0.387817  1\n  C  C32  1  0.957664  0.750086  0.337668  1\n  C  C33  1  0.871318  0.250289  0.412905  1\n  C  C34  1  0.352845  0.250576  0.458662  1\n  C  C35  1  0.628253  0.750536  0.438007  1\n  C  C36  1  0.146345  0.751006  0.483778  1\n  C  C37  1  0.062757  0.250704  0.458726  1\n  C  C38  1  0.544931  0.250312  0.412899  1\n  C  C39  1  0.436570  0.750499  0.483788  1\n  C  C40  1  0.954496  0.750705  0.438011  1\n",
+      "work_function": 5.213105811489982,
+      "efermi": -0.7599,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        2,
+        0,
+        -2,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.3657519229133016,
+      "surface_energy": 5.859991576666187,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46428713\n_cell_length_b   14.59463197\n_cell_length_c   25.61080324\n_cell_angle_alpha   98.40875276\n_cell_angle_beta   89.99998923\n_cell_angle_gamma   85.15707523\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C48\n_cell_volume   907.87570971\n_cell_formula_units_Z   48\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C1  1  0.945238  0.109524  0.011289  1\n  C  C2  1  0.688038  0.623924  0.056088  1\n  C  C3  1  0.441383  0.117235  0.093611  1\n  C  C4  1  0.188141  0.623717  0.138232  1\n  C  C5  1  0.812156  0.375689  0.026157  1\n  C  C6  1  0.567056  0.865888  0.069645  1\n  C  C7  1  0.312958  0.374084  0.110890  1\n  C  C8  1  0.065018  0.869964  0.154791  1\n  C  C9  1  0.444053  0.111894  0.035765  1\n  C  C10  1  0.188122  0.623755  0.080788  1\n  C  C11  1  0.940305  0.119390  0.121116  1\n  C  C12  1  0.688069  0.623862  0.165653  1\n  C  C13  1  0.812819  0.374363  0.083546  1\n  C  C14  1  0.565661  0.868678  0.127311  1\n  C  C15  1  0.311782  0.376436  0.001869  1\n  C  C16  1  0.067211  0.865578  0.045010  1\n  C  C17  1  0.938547  0.122906  0.177401  1\n  C  C18  1  0.687770  0.624460  0.221719  1\n  C  C19  1  0.436713  0.126575  0.261237  1\n  C  C20  1  0.187200  0.625599  0.305362  1\n  C  C21  1  0.812800  0.374401  0.194638  1\n  C  C22  1  0.563287  0.873425  0.238763  1\n  C  C23  1  0.312230  0.375540  0.278281  1\n  C  C24  1  0.061453  0.877094  0.322599  1\n  C  C25  1  0.437882  0.124236  0.205181  1\n  C  C26  1  0.187572  0.624855  0.249428  1\n  C  C27  1  0.936164  0.127673  0.289011  1\n  C  C28  1  0.687068  0.625865  0.333068  1\n  C  C29  1  0.812428  0.375145  0.250572  1\n  C  C30  1  0.562118  0.875764  0.294819  1\n  C  C31  1  0.312932  0.374135  0.166932  1\n  C  C32  1  0.063836  0.872327  0.210989  1\n  C  C33  1  0.934982  0.130036  0.345209  1\n  C  C34  1  0.687042  0.625916  0.389110  1\n  C  C35  1  0.432944  0.134112  0.430355  1\n  C  C36  1  0.187844  0.624311  0.473843  1\n  C  C37  1  0.811859  0.376283  0.361768  1\n  C  C38  1  0.558617  0.882765  0.406389  1\n  C  C39  1  0.311962  0.376076  0.443912  1\n  C  C40  1  0.054762  0.890476  0.488711  1\n  C  C41  1  0.434339  0.131322  0.372689  1\n  C  C42  1  0.187181  0.625637  0.416454  1\n  C  C43  1  0.932789  0.134422  0.454990  1\n  C  C44  1  0.688218  0.623564  0.498131  1\n  C  C45  1  0.811878  0.376245  0.419212  1\n  C  C46  1  0.555947  0.888106  0.464235  1\n  C  C47  1  0.311931  0.376138  0.334347  1\n  C  C48  1  0.059695  0.880610  0.378884  1\n",
+      "work_function": 6.099529744491495,
+      "efermi": -1.0569,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        2,
+        1,
+        -3,
+        1
+      ],
+      "surface_energy_EV_PER_ANG2": 0.3067119196218507,
+      "surface_energy": 4.914066482907332,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   6.51920526\n_cell_length_b   7.59584894\n_cell_length_c   24.27487679\n_cell_angle_alpha   94.72514137\n_cell_angle_beta   94.39469079\n_cell_angle_gamma   107.84998026\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C60\n_cell_volume   1133.71687536\n_cell_formula_units_Z   60\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C1  1  0.081713  0.247379  0.012105  1\n  C  C2  1  0.460293  0.249063  0.044200  1\n  C  C3  1  0.823038  0.249310  0.074883  1\n  C  C4  1  0.293803  0.750058  0.028056  1\n  C  C5  1  0.648348  0.749502  0.055820  1\n  C  C6  1  0.008425  0.749411  0.091559  1\n  C  C7  1  0.254083  0.248507  0.050366  1\n  C  C8  1  0.614503  0.249705  0.086163  1\n  C  C9  1  0.898921  0.248268  0.022534  1\n  C  C10  1  0.217113  0.749738  0.080260  1\n  C  C11  1  0.476893  0.750006  0.017552  1\n  C  C12  1  0.854371  0.749180  0.049556  1\n  C  C13  1  0.193390  0.249466  0.107701  1\n  C  C14  1  0.558788  0.250063  0.142104  1\n  C  C15  1  0.926075  0.250127  0.174905  1\n  C  C16  1  0.376619  0.749800  0.124280  1\n  C  C17  1  0.741771  0.749680  0.157815  1\n  C  C18  1  0.109181  0.749833  0.191613  1\n  C  C19  1  0.347702  0.249929  0.152397  1\n  C  C20  1  0.715133  0.250169  0.186209  1\n  C  C21  1  0.982350  0.249679  0.118844  1\n  C  C22  1  0.320230  0.749855  0.180253  1\n  C  C23  1  0.587453  0.749718  0.113084  1\n  C  C24  1  0.952782  0.749598  0.147472  1\n  C  C25  1  0.291723  0.250066  0.208299  1\n  C  C26  1  0.658862  0.250156  0.241902  1\n  C  C27  1  0.024800  0.250160  0.275171  1\n  C  C28  1  0.475069  0.749868  0.224734  1\n  C  C29  1  0.841159  0.749887  0.258066  1\n  C  C30  1  0.208488  0.750073  0.291740  1\n  C  C31  1  0.446777  0.250126  0.252652  1\n  C  C32  1  0.813906  0.250181  0.286261  1\n  C  C33  1  0.080861  0.250109  0.219384  1\n  C  C34  1  0.419182  0.749977  0.280484  1\n  C  C35  1  0.685881  0.749822  0.213627  1\n  C  C36  1  0.053100  0.749953  0.247271  1\n  C  C37  1  0.390592  0.250221  0.308356  1\n  C  C38  1  0.757921  0.250365  0.342149  1\n  C  C39  1  0.123101  0.250314  0.375682  1\n  C  C40  1  0.573930  0.749954  0.325015  1\n  C  C41  1  0.941655  0.750061  0.357920  1\n  C  C42  1  0.306393  0.750551  0.392511  1\n  C  C43  1  0.546934  0.250473  0.352464  1\n  C  C44  1  0.912054  0.250400  0.386824  1\n  C  C45  1  0.179599  0.250196  0.319663  1\n  C  C46  1  0.517212  0.750292  0.380930  1\n  C  C47  1  0.785222  0.749926  0.313714  1\n  C  C48  1  0.152531  0.750218  0.347572  1\n  C  C49  1  0.491209  0.250799  0.408405  1\n  C  C50  1  0.851280  0.250841  0.444110  1\n  C  C51  1  0.205823  0.250193  0.471941  1\n  C  C52  1  0.677948  0.750402  0.424638  1\n  C  C53  1  0.036531  0.750132  0.457998  1\n  C  C54  1  0.420466  0.751814  0.487123  1\n  C  C55  1  0.645256  0.251153  0.450355  1\n  C  C56  1  0.022717  0.250356  0.482310  1\n  C  C57  1  0.282269  0.250514  0.419713  1\n  C  C58  1  0.605467  0.751137  0.477468  1\n  C  C59  1  0.887453  0.750093  0.413870  1\n  C  C60  1  0.243650  0.751169  0.449948  1\n",
+      "work_function": 6.05392721701296,
+      "efermi": -1.28394843,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        1,
+        1,
+        -2,
+        0
+      ],
+      "surface_energy_EV_PER_ANG2": 0.2820226422045257,
+      "surface_energy": 4.518500667293578,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   7.18968700\n_cell_length_b   4.26808100\n_cell_length_c   24.64475200\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C40\n_cell_volume   756.25296275\n_cell_formula_units_Z   40\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C1  1  0.750000  0.522165  0.278889  1\n  C  C2  1  0.750000  0.003586  0.324558  1\n  C  C3  1  0.250000  0.477836  0.278889  1\n  C  C4  1  0.250000  0.996414  0.324558  1\n  C  C5  1  0.750000  0.329914  0.324580  1\n  C  C6  1  0.750000  0.812164  0.278718  1\n  C  C7  1  0.250000  0.670086  0.324580  1\n  C  C8  1  0.250000  0.187836  0.278718  1\n  C  C9  1  0.750000  0.500412  0.374760  1\n  C  C10  1  0.750000  0.000604  0.424883  1\n  C  C11  1  0.250000  0.499588  0.374760  1\n  C  C12  1  0.250000  0.999396  0.424883  1\n  C  C13  1  0.750000  0.332712  0.424889  1\n  C  C14  1  0.750000  0.833030  0.374741  1\n  C  C15  1  0.250000  0.667288  0.424889  1\n  C  C16  1  0.250000  0.166970  0.374741  1\n  C  C17  1  0.750000  0.499797  0.475034  1\n  C  C18  1  0.750000  0.999797  0.524966  1\n  C  C19  1  0.250000  0.500203  0.475034  1\n  C  C20  1  0.250000  0.000203  0.524966  1\n  C  C21  1  0.750000  0.333471  0.524971  1\n  C  C22  1  0.750000  0.833471  0.475029  1\n  C  C23  1  0.250000  0.666529  0.524971  1\n  C  C24  1  0.250000  0.166529  0.475029  1\n  C  C25  1  0.750000  0.500604  0.575117  1\n  C  C26  1  0.750000  0.000412  0.625240  1\n  C  C27  1  0.250000  0.499396  0.575117  1\n  C  C28  1  0.250000  0.999588  0.625240  1\n  C  C29  1  0.750000  0.333030  0.625259  1\n  C  C30  1  0.750000  0.832712  0.575111  1\n  C  C31  1  0.250000  0.666970  0.625259  1\n  C  C32  1  0.250000  0.167288  0.575111  1\n  C  C33  1  0.750000  0.503586  0.675442  1\n  C  C34  1  0.750000  0.022165  0.721111  1\n  C  C35  1  0.250000  0.496414  0.675442  1\n  C  C36  1  0.250000  0.977835  0.721111  1\n  C  C37  1  0.750000  0.312164  0.721282  1\n  C  C38  1  0.750000  0.829914  0.675420  1\n  C  C39  1  0.250000  0.687836  0.721282  1\n  C  C40  1  0.250000  0.170086  0.675420  1\n",
+      "work_function": 5.14689173316395,
+      "efermi": -0.68,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    },
+    {
+      "miller_index": [
+        1,
+        0,
+        -1,
+        2
+      ],
+      "surface_energy_EV_PER_ANG2": 0.31659356689492013,
+      "surface_energy": 5.07238791925833,
+      "is_reconstructed": false,
+      "structure": "# generated using pymatgen\ndata_C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.46425934\n_cell_length_b   8.70618481\n_cell_length_c   25.60932896\n_cell_angle_alpha   60.64287153\n_cell_angle_beta   90.00000234\n_cell_angle_gamma   73.55786298\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   C\n_chemical_formula_sum   C24\n_cell_volume   452.91767185\n_cell_formula_units_Z   24\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  C  C1  1  0.708836  0.791164  0.123146  1\n  C  C2  1  0.179464  0.820536  0.036721  1\n  C  C3  1  0.700871  0.299129  0.112484  1\n  C  C4  1  0.179024  0.320976  0.024252  1\n  C  C5  1  0.218913  0.781088  0.152020  1\n  C  C6  1  0.687678  0.812323  0.062427  1\n  C  C7  1  0.192929  0.307070  0.083933  1\n  C  C8  1  0.675137  0.324862  0.999263  1\n  C  C9  1  0.771136  0.728864  0.299533  1\n  C  C10  1  0.239769  0.760231  0.211222  1\n  C  C11  1  0.760231  0.239769  0.288778  1\n  C  C12  1  0.228864  0.271136  0.200467  1\n  C  C13  1  0.280937  0.719064  0.328694  1\n  C  C14  1  0.750216  0.749785  0.240480  1\n  C  C15  1  0.249784  0.250215  0.259520  1\n  C  C16  1  0.719063  0.280936  0.171306  1\n  C  C17  1  0.820976  0.679024  0.475748  1\n  C  C18  1  0.299129  0.700871  0.387516  1\n  C  C19  1  0.820536  0.179464  0.463279  1\n  C  C20  1  0.291164  0.208836  0.376854  1\n  C  C21  1  0.324863  0.675138  0.500737  1\n  C  C22  1  0.807071  0.692930  0.416067  1\n  C  C23  1  0.312322  0.187677  0.437573  1\n  C  C24  1  0.781087  0.218912  0.347980  1\n",
+      "work_function": 4.684479575383358,
+      "efermi": -0.32400217,
+      "area_fraction": 0.0,
+      "has_wulff": true
+    }
+  ],
+  "weighted_surface_energy_EV_PER_ANG2": 0.0011932106300648667,
+  "pretty_formula": "C",
+  "weighted_surface_energy": 0.019117341026327606,
+  "surface_anisotropy": 21.066744572741296,
+  "shape_factor": 72.51049744764661,
+  "weighted_work_function": 5.025480570101199,
+  "has_reconstructed": false,
+  "material_id": "mp-48",
+  "fields_not_requested": [
+    "structure"
+  ]
+}

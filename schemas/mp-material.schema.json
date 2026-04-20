@@ -5,6 +5,69 @@
   "description": "JSON Schema for data/mp-materials-rich.json — one record per MESS-Parameters material slug, carrying DFT-computed properties fetched from the Materials Project and derived with pymatgen. Consumed by messai-ai's generate-material-fixtures.ts and rendered on the parameter detail page alongside literature narrative.",
   "type": "object",
   "definitions": {
+    "elasticity": {
+      "type": "object",
+      "description": "DFT-computed elastic tensor properties. From MP's elasticity collection (~13k materials; null for the rest).",
+      "additionalProperties": false,
+      "properties": {
+        "bulk_modulus_GPa": {
+          "type": ["number", "null"],
+          "description": "Voigt-Reuss-Hill average bulk modulus. <50 = fragile under flow/biofilm stress; >100 = high durability."
+        },
+        "shear_modulus_GPa": {
+          "type": ["number", "null"],
+          "description": "VRH average shear modulus."
+        },
+        "youngs_modulus_GPa": {
+          "type": ["number", "null"],
+          "description": "Derived from bulk + shear via E = 9KG/(3K+G) when MP doesn't surface it directly."
+        },
+        "poissons_ratio": {
+          "type": ["number", "null"],
+          "description": "Homogeneous Poisson ratio."
+        },
+        "universal_anisotropy": {
+          "type": ["number", "null"],
+          "description": "Ranvinder-Chung anisotropy index. 0 = isotropic."
+        },
+        "debye_temperature_K": {
+          "type": ["number", "null"]
+        },
+        "source_functional": {
+          "type": "string",
+          "enum": ["PBE", "PBE+U", "r2SCAN", "SCAN"]
+        }
+      }
+    },
+    "surface": {
+      "type": "object",
+      "description": "DFT-computed surface properties. From MP's surface_properties collection (~1k materials; null for the rest).",
+      "additionalProperties": false,
+      "properties": {
+        "weighted_surface_energy_J_per_m2": {
+          "type": ["number", "null"],
+          "description": "Area-weighted facet-averaged surface energy. Biofilm-adhesion proxy (higher tension → more protein adsorption → stronger initial colonization)."
+        },
+        "work_function_eV": {
+          "type": ["number", "null"],
+          "description": "Area-weighted facet-averaged work function. Direct ORR/OER activity proxy for cathode catalysts. Pt ~5.5 eV is benchmark."
+        },
+        "surface_anisotropy": {
+          "type": ["number", "null"]
+        },
+        "shape_factor": {
+          "type": ["number", "null"]
+        },
+        "has_reconstructed": {
+          "type": ["boolean", "null"],
+          "description": "True if any surface facet reconstructs under DFT relaxation."
+        },
+        "source_functional": {
+          "type": "string",
+          "enum": ["PBE", "PBE+U", "r2SCAN", "SCAN"]
+        }
+      }
+    },
     "mpFunctional": {
       "type": "string",
       "enum": ["PBE", "PBE+U", "r2SCAN", "SCAN", "HSE06"],
@@ -156,6 +219,20 @@
           "type": ["string", "null"],
           "description": "Primary component's crystal structure as CIF text. Reserved for MLIP feature extraction in v0.3+."
         },
+        "elasticity": {
+          "oneOf": [
+            { "$ref": "#/definitions/elasticity" },
+            { "type": "null" }
+          ],
+          "description": "Null when MP has no elasticity entry for the primary component (~15% of MES-relevant materials)."
+        },
+        "surface": {
+          "oneOf": [
+            { "$ref": "#/definitions/surface" },
+            { "type": "null" }
+          ],
+          "description": "Null when MP has no surface-properties entry for the primary component (more common than elasticity gaps)."
+        },
         "notes": {
           "type": ["string", "null"],
           "description": "Free-form producer-side caveats not captured by confidence_tier (e.g. 'MnO2 beta-phase used; alpha-phase would yield different Pourbaix result')."
@@ -168,7 +245,7 @@
   "properties": {
     "schema_version": {
       "type": "string",
-      "const": "0.1.0"
+      "const": "0.2.0"
     },
     "generated_at": {
       "type": "string",

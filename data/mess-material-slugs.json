@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-04-20T02:51:26.468040+00:00",
+  "mess_parameters_source": "open-source/MESS-Parameters/data/parameter-definitions-rich.json",
+  "filter": "category==MATERIALS and data_type==OBJECT",
+  "count": 26,
+  "slugs": [
+    {
+      "slug": "proton_exchange_membrane",
+      "name": "Proton Exchange Membrane",
+      "subcategory": "Ion Exchange Membranes",
+      "usage_count": 102
+    },
+    {
+      "slug": "carbon_felt",
+      "name": "Carbon Felt",
+      "subcategory": "Carbon-Based Anodes",
+      "usage_count": 6
+    },
+    {
+      "slug": "activated_carbon",
+      "name": "Activated Carbon",
+      "subcategory": "Carbon-Based Anodes",
+      "usage_count": 4
+    },
+    {
+      "slug": "catalyst_layer",
+      "name": "Catalyst Layer",
+      "subcategory": "Air Cathodes",
+      "usage_count": 4
+    },
+    {
+      "slug": "graphene_oxide",
+      "name": "Graphene Oxide",
+      "subcategory": "Advanced Carbon Materials",
+      "usage_count": 4
+    },
+    {
+      "slug": "carbon_nanotubes",
+      "name": "Carbon Nanotubes",
+      "subcategory": "Advanced Carbon Materials",
+      "usage_count": 2
+    },
+    {
+      "slug": "stainless_steel",
+      "name": "Stainless Steel",
+      "subcategory": "Metal-Based Cathodes",
+      "usage_count": 2
+    },
+    {
+      "slug": "ammonia_treatment",
+      "name": "Ammonia Treatment",
+      "subcategory": "Anode Modifications",
+      "usage_count": 0
+    },
+    {
+      "slug": "anion_exchange_membrane",
+      "name": "Anion Exchange Membrane",
+      "subcategory": "Ion Exchange Membranes",
+      "usage_count": 0
+    },
+    {
+      "slug": "bipolar_membrane",
+      "name": "Bipolar Membrane",
+      "subcategory": "Ion Exchange Membranes",
+      "usage_count": 0
+    },
+    {
+      "slug": "carbon_cloth",
+      "name": "Carbon Cloth",
+      "subcategory": "Carbon-Based Anodes",
+      "usage_count": 0
+    },
+    {
+      "slug": "carbon_paper",
+      "name": "Carbon Paper",
+      "subcategory": "Carbon-Based Anodes",
+      "usage_count": 0
+    },
+    {
+      "slug": "ceramic_separator",
+      "name": "Ceramic Separator",
+      "subcategory": "Porous Separators",
+      "usage_count": 0
+    },
+    {
+      "slug": "cobalt_oxide",
+      "name": "Cobalt Oxide",
+      "subcategory": "Metal Oxide Cathodes",
+      "usage_count": 0
+    },
+    {
+      "slug": "copper_cathode",
+      "name": "Copper Cathode",
+      "subcategory": "Metal-Based Cathodes",
+      "usage_count": 0
+    },
+    {
+      "slug": "gas_diffusion_layer",
+      "name": "Gas Diffusion Layer",
+      "subcategory": "Air Cathodes",
+      "usage_count": 0
+    },
+    {
+      "slug": "graphite_brush",
+      "name": "Graphite Brush",
+      "subcategory": "Carbon-Based Anodes",
+      "usage_count": 0
+    },
+    {
+      "slug": "iron_oxide",
+      "name": "Iron Oxide",
+      "subcategory": "Metal Oxide Cathodes",
+      "usage_count": 0
+    },
+    {
+      "slug": "manganese_oxide",
+      "name": "Manganese Oxide",
+      "subcategory": "Metal Oxide Cathodes",
+      "usage_count": 0
+    },
+    {
+      "slug": "nb2ctx_mxene",
+      "name": "Nb2ctx Mxene",
+      "subcategory": "MXene Materials",
+      "usage_count": 0
+    },
+    {
+      "slug": "nickel_foam",
+      "name": "Nickel Foam",
+      "subcategory": "Metal-Based Cathodes",
+      "usage_count": 0
+    },
+    {
+      "slug": "platinum_cathode",
+      "name": "Platinum Cathode",
+      "subcategory": "Metal-Based Cathodes",
+      "usage_count": 0
+    },
+    {
+      "slug": "polymer_coating",
+      "name": "Polymer Coating",
+      "subcategory": "Anode Modifications",
+      "usage_count": 0
+    },
+    {
+      "slug": "polymer_separator",
+      "name": "Polymer Separator",
+      "subcategory": "Porous Separators",
+      "usage_count": 0
+    },
+    {
+      "slug": "ti3c2tx_mxene",
+      "name": "Ti3c2tx Mxene",
+      "subcategory": "MXene Materials",
+      "usage_count": 0
+    },
+    {
+      "slug": "v2ctx_mxene",
+      "name": "V2ctx Mxene",
+      "subcategory": "MXene Materials",
+      "usage_count": 0
+    }
+  ]
+}

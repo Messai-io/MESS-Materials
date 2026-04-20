@@ -1,0 +1,6 @@
+# Phase 1a pipeline dependencies
+mp-api>=0.44.0
+pymatgen>=2024.8.0
+PyYAML>=6.0
+python-dotenv>=1.0.0
+jsonschema>=4.21.0

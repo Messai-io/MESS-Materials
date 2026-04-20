@@ -1,0 +1,230 @@
+{
+  "conditions": {
+    "mfc_anode": {
+      "potential_V_vs_SHE": -0.3,
+      "pH": 7.0
+    },
+    "mfc_cathode": {
+      "potential_V_vs_SHE": 0.2,
+      "pH": 7.0
+    },
+    "mec_cathode": {
+      "potential_V_vs_SHE": -0.7,
+      "pH": 7.0
+    }
+  },
+  "passivator_override_elements": [
+    "Al",
+    "C",
+    "Cr",
+    "Ni",
+    "Ta",
+    "Ti",
+    "Zr"
+  ],
+  "materials": {
+    "mp-126": {
+      "elements": [
+        "Pt"
+      ],
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "stable",
+          "stable_phase": "Pt",
+          "decomposition_energy_eV": 0.0,
+          "notes": null
+        },
+        "mfc_cathode": {
+          "state": "stable",
+          "stable_phase": "Pt",
+          "decomposition_energy_eV": 0.0,
+          "notes": null
+        },
+        "mec_cathode": {
+          "state": "stable",
+          "stable_phase": "Pt",
+          "decomposition_energy_eV": 0.0,
+          "notes": null
+        }
+      }
+    },
+    "mp-13": {
+      "elements": [
+        "Fe"
+      ],
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "corroding",
+          "stable_phase": "FeOH[+1]",
+          "decomposition_energy_eV": 0.7737623960257647,
+          "notes": "decomposes toward FeOH[+1]"
+        },
+        "mfc_cathode": {
+          "state": "corroding",
+          "stable_phase": "Fe2O3",
+          "decomposition_energy_eV": 0.5778962691666675,
+          "notes": "decomposes toward Fe2O3"
+        },
+        "mec_cathode": {
+          "state": "corroding",
+          "stable_phase": "Fe",
+          "decomposition_energy_eV": 1.1291356416666674,
+          "notes": "decomposes toward Fe"
+        }
+      }
+    },
+    "mp-18748": {
+      "elements": [
+        "Co",
+        "O"
+      ],
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "corroding",
+          "stable_phase": "Co[+2]",
+          "decomposition_energy_eV": 0.24490465918047916,
+          "notes": "decomposes toward Co[+2]"
+        },
+        "mfc_cathode": {
+          "state": "corroding",
+          "stable_phase": "Co[+2]",
+          "decomposition_energy_eV": 0.10204751632333628,
+          "notes": "decomposes toward Co[+2]"
+        },
+        "mec_cathode": {
+          "state": "corroding",
+          "stable_phase": "Co",
+          "decomposition_energy_eV": 0.6223170250000004,
+          "notes": "decomposes toward Co"
+        }
+      }
+    },
+    "mp-19306": {
+      "elements": [
+        "Fe",
+        "O"
+      ],
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "corroding",
+          "stable_phase": "FeOH[+1]",
+          "decomposition_energy_eV": 0.05501200131883963,
+          "notes": "decomposes toward FeOH[+1]"
+        },
+        "mfc_cathode": {
+          "state": "corroding",
+          "stable_phase": "Fe2O3",
+          "decomposition_energy_eV": 0.08889840964285756,
+          "notes": "decomposes toward Fe2O3"
+        },
+        "mec_cathode": {
+          "state": "corroding",
+          "stable_phase": "Fe",
+          "decomposition_energy_eV": 0.28334903142857154,
+          "notes": "decomposes toward Fe"
+        }
+      }
+    },
+    "mp-19395": {
+      "elements": [
+        "Mn",
+        "O"
+      ],
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "corroding",
+          "stable_phase": "Mn[+2]",
+          "decomposition_energy_eV": 0.5826444663246445,
+          "notes": "decomposes toward Mn[+2]"
+        },
+        "mfc_cathode": {
+          "state": "corroding",
+          "stable_phase": "Mn[+2]",
+          "decomposition_energy_eV": 0.24931113299131122,
+          "notes": "decomposes toward Mn[+2]"
+        },
+        "mec_cathode": {
+          "state": "corroding",
+          "stable_phase": "Mn[+2]",
+          "decomposition_energy_eV": 0.8493111329913111,
+          "notes": "decomposes toward Mn[+2]"
+        }
+      }
+    },
+    "mp-23": {
+      "elements": [
+        "Ni"
+      ],
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "passivated",
+          "stable_phase": "Ni[+2]",
+          "decomposition_energy_eV": 0.16085102146447783,
+          "notes": "kinetic-stability override (Ni: aqueous NiO passivation layer); thermodynamic Pourbaix says corroding toward Ni[+2]"
+        },
+        "mfc_cathode": {
+          "state": "passivated",
+          "stable_phase": "Ni[+2]",
+          "decomposition_energy_eV": 1.1608510214644778,
+          "notes": "kinetic-stability override (Ni: aqueous NiO passivation layer); thermodynamic Pourbaix says corroding toward Ni[+2]"
+        },
+        "mec_cathode": {
+          "state": "stable",
+          "stable_phase": "Ni",
+          "decomposition_energy_eV": 0.0,
+          "notes": null
+        }
+      }
+    },
+    "mp-30": {
+      "elements": [
+        "Cu"
+      ],
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "stable",
+          "stable_phase": "Cu",
+          "decomposition_energy_eV": 0.0,
+          "notes": null
+        },
+        "mfc_cathode": {
+          "state": "corroding",
+          "stable_phase": "CuO",
+          "decomposition_energy_eV": 0.33795888499999927,
+          "notes": "decomposes toward CuO"
+        },
+        "mec_cathode": {
+          "state": "stable",
+          "stable_phase": "Cu",
+          "decomposition_energy_eV": 0.0,
+          "notes": null
+        }
+      }
+    },
+    "mp-48": {
+      "elements": [
+        "C"
+      ],
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "passivated",
+          "stable_phase": "CH4(aq)",
+          "decomposition_energy_eV": 0.8582172531296435,
+          "notes": "kinetic-stability override (C: kinetic inertness (CH4/HCO3- reaction rate \u2248 0 at MES temperatures)); thermodynamic Pourbaix says corroding toward CH4(aq)"
+        },
+        "mfc_cathode": {
+          "state": "passivated",
+          "stable_phase": "HCO3[-1]",
+          "decomposition_energy_eV": 2.5313516678054997,
+          "notes": "kinetic-stability override (C: kinetic inertness (CH4/HCO3- reaction rate \u2248 0 at MES temperatures)); thermodynamic Pourbaix says corroding toward HCO3[-1]"
+        },
+        "mec_cathode": {
+          "state": "passivated",
+          "stable_phase": "CH4(aq)",
+          "decomposition_energy_eV": 2.4582172531296433,
+          "notes": "kinetic-stability override (C: kinetic inertness (CH4/HCO3- reaction rate \u2248 0 at MES temperatures)); thermodynamic Pourbaix says corroding toward CH4(aq)"
+        }
+      }
+    }
+  }
+}

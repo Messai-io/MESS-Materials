@@ -1,0 +1,48 @@
+{
+  "unmapped": [
+    {
+      "slug": "proton_exchange_membrane",
+      "reason": "Nafion and analog polymers are organic and have no crystalline MP entry. DFT of repeat-unit monomers is possible but out of scope for v0.1."
+    },
+    {
+      "slug": "anion_exchange_membrane",
+      "reason": "Functional polymer (quaternary ammonium PE backbone); same caveat as proton_exchange_membrane."
+    },
+    {
+      "slug": "bipolar_membrane",
+      "reason": "Polymer composite stacking PEM+AEM; same caveat as proton_exchange_membrane."
+    },
+    {
+      "slug": "polymer_coating",
+      "reason": "Composition varies (PTFE, PVDF, polypyrrole, etc.); no canonical MP structure. Revisit per-coating in v0.2 if specific polymers become MESS-Parameters entries."
+    },
+    {
+      "slug": "polymer_separator",
+      "reason": "Same caveat as polymer_coating."
+    },
+    {
+      "slug": "catalyst_layer",
+      "reason": "Not a material; describes a structural region (typically Pt/C ink on GDL). Its components (e.g. platinum_cathode) are covered separately."
+    },
+    {
+      "slug": "ammonia_treatment",
+      "reason": "Surface modification process, not a material. Belongs to MESS-Parameters operational category; no DFT structure to fetch."
+    },
+    {
+      "slug": "ceramic_separator",
+      "reason": "Composition varies (Al2O3, MgO, clay-based). Leaving unmapped in v0.1 to avoid misleading users who assume a single proxy covers all ceramic separators. Revisit in v0.2 if MESS-Parameters splits by composition."
+    },
+    {
+      "slug": "ti3c2tx_mxene",
+      "reason": "TEMP \u2014 MP MXene coverage needs verification before tagging v0.1.0-pilot. Promote to `materials` with correct mp_id."
+    },
+    {
+      "slug": "nb2ctx_mxene",
+      "reason": "TEMP \u2014 see ti3c2tx_mxene."
+    },
+    {
+      "slug": "v2ctx_mxene",
+      "reason": "TEMP \u2014 see ti3c2tx_mxene."
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+# MESS-Parameters slug → Materials Project ID mapping
+#
+# Manual curation file. Every MESS-Parameters material slug (category=MATERIALS,
+# data_type=OBJECT) must appear either in `materials:` (mapped) or `unmapped:`
+# (explicitly unmapped with a reason). `assemble-rich-json.py` enforces this.
+#
+# Confidence tier is auto-derived when omitted:
+#   high   = single component, proxy=false
+#   medium = multiple components, no proxies
+#   low    = any component with proxy=true
+# Override via `confidence_tier_override: high|medium|low`.
+#
+# Component roles: bulk_structure | catalyst | support | coating | dopant | matrix | filler
+# `proxy: true` flags that the MP structure is a crystalline stand-in for an
+# amorphous or disordered real material (e.g. graphite for carbon cloth).
+
+schema: 0.1.0
+mess_parameters_tag: v0.2.0
+
+materials:
+  # -- Well-characterized metallic cathodes --
+  - slug: platinum_cathode
+    components:
+      - mp_id: mp-126          # Pt (fcc)
+        role: bulk_structure
+        proxy: false
+    notes: Benchmark noble-metal cathode; thermodynamically stable across all MES operating conditions.
+
+  - slug: copper_cathode
+    components:
+      - mp_id: mp-30           # Cu (fcc)
+        role: bulk_structure
+        proxy: false
+    notes: Copper is biocidal in dissolved form — flag for biofilm compatibility in BCS.
+
+  - slug: nickel_foam
+    components:
+      - mp_id: mp-23           # Ni (fcc)
+        role: bulk_structure
+        proxy: true
+    notes: Foam morphology not captured by crystalline Ni; use only the bulk chemistry + passivator behavior. Porosity lives in MESS-Parameters measurements.
+
+  - slug: stainless_steel
+    components:
+      - mp_id: mp-13           # Fe (bcc) — iron is the dominant element
+        role: bulk_structure
+        proxy: true
+    notes: Stainless is an Fe-Cr-Ni alloy; MP has no alloy composition exactly matching common SS grades (304, 316). Using Fe with passivator override captures the practical corrosion behavior. Refine with specific alloys in v0.2+.
+
+  # -- Transition metal oxide cathodes --
+  - slug: manganese_oxide
+    components:
+      - mp_id: mp-19395        # β-MnO2 (pyrolusite) — most common MES form
+        role: bulk_structure
+        proxy: false
+    notes: MES literature usually reports MnO2 without phase specification. β-MnO2 is the default; α- and γ-phases would give different Pourbaix signatures. Flag phase ambiguity.
+
+  - slug: iron_oxide
+    components:
+      - mp_id: mp-19306        # Fe3O4 magnetite (cubic, experimental ground state)
+        role: bulk_structure
+        proxy: false
+    notes: Magnetite chosen over hematite (Fe2O3, mp-19770) because it is semi-metallic at room temperature and dominant in MES applications. Hematite coverage is a v0.2 refinement.
+
+  - slug: cobalt_oxide
+    components:
+      - mp_id: mp-18748        # Co3O4 cubic spinel (experimental)
+        role: bulk_structure
+        proxy: false
+
+  # -- Carbon family (all amorphous-proxied to graphite) --
+  - slug: carbon_cloth
+    components:
+      - mp_id: mp-48           # Graphite
+        role: bulk_structure
+        proxy: true
+    notes: Amorphous/partially-ordered carbon fabric. EVS/LSS low-confidence; differentiate via surface-treatment parameters in MESS-Parameters.
+
+  - slug: carbon_felt
+    components:
+      - mp_id: mp-48
+        role: bulk_structure
+        proxy: true
+    notes: Same proxy caveat as carbon_cloth. Higher porosity than cloth — structural difference not captured by DFT.
+
+  - slug: carbon_paper
+    components:
+      - mp_id: mp-48
+        role: bulk_structure
+        proxy: true
+    notes: Same proxy caveat as carbon_cloth.
+
+  - slug: graphite_brush
+    components:
+      - mp_id: mp-48
+        role: bulk_structure
+        proxy: false
+    notes: Actually graphitic, unlike the fabric forms. Confidence downgraded only by morphology uncertainty, not chemistry.
+
+  - slug: activated_carbon
+    components:
+      - mp_id: mp-48
+        role: bulk_structure
+        proxy: true
+    notes: Amorphous + micropore-dominated surface area; DFT on graphite misses both. Treat EVS as chemistry-floor only; expect surface-area driven performance to dominate in practice.
+
+  - slug: carbon_nanotubes
+    components:
+      - mp_id: mp-48
+        role: bulk_structure
+        proxy: true
+    notes: MP has no canonical SWNT/MWNT entry; graphite is the standard approximation. Real CNT properties depend on chirality and diameter — document in SCIENTIFIC_INTEGRITY.md.
+
+  - slug: graphene_oxide
+    components:
+      - mp_id: mp-48
+        role: bulk_structure
+        proxy: true
+    notes: Oxygen functionalization radically changes properties; crystalline graphite is a weak proxy. Mark low-confidence explicitly.
+
+  - slug: gas_diffusion_layer
+    components:
+      - mp_id: mp-48
+        role: bulk_structure
+        proxy: true
+    notes: Typically carbon cloth + PTFE binder. Carbon-side chemistry only.
+
+  # -- MXenes (placeholders — mp_id lookup needed) --
+  # TODO: verify MP IDs for Ti3C2, Nb2C, V2C MAX/MXene phases before v0.1.0-pilot tag.
+  # MP has many MAX-phase entries; the actual MXene (etched) structures are less
+  # well-covered. If a Ti3C2 entry with appropriate stoichiometry isn't present,
+  # move these to `unmapped` and seek MXene-specific upstream data sources.
+
+unmapped:
+  # -- Polymer electrolytes / membranes: no crystalline MP analog --
+  - slug: proton_exchange_membrane
+    reason: Nafion and analog polymers are organic and have no crystalline MP entry. DFT of repeat-unit monomers is possible but out of scope for v0.1.
+
+  - slug: anion_exchange_membrane
+    reason: Functional polymer (quaternary ammonium PE backbone); same caveat as proton_exchange_membrane.
+
+  - slug: bipolar_membrane
+    reason: Polymer composite stacking PEM+AEM; same caveat as proton_exchange_membrane.
+
+  - slug: polymer_coating
+    reason: Composition varies (PTFE, PVDF, polypyrrole, etc.); no canonical MP structure. Revisit per-coating in v0.2 if specific polymers become MESS-Parameters entries.
+
+  - slug: polymer_separator
+    reason: Same caveat as polymer_coating.
+
+  # -- Composition depends on context --
+  - slug: catalyst_layer
+    reason: Not a material; describes a structural region (typically Pt/C ink on GDL). Its components (e.g. platinum_cathode) are covered separately.
+
+  - slug: ammonia_treatment
+    reason: Surface modification process, not a material. Belongs to MESS-Parameters operational category; no DFT structure to fetch.
+
+  # -- Ceramic separators (optional mapping) --
+  - slug: ceramic_separator
+    reason: Composition varies (Al2O3, MgO, clay-based). Leaving unmapped in v0.1 to avoid misleading users who assume a single proxy covers all ceramic separators. Revisit in v0.2 if MESS-Parameters splits by composition.
+
+  # -- MXenes (temporary — move to `materials` once mp_id is verified) --
+  - slug: ti3c2tx_mxene
+    reason: TEMP — MP MXene coverage needs verification before tagging v0.1.0-pilot. Promote to `materials` with correct mp_id.
+
+  - slug: nb2ctx_mxene
+    reason: TEMP — see ti3c2tx_mxene.
+
+  - slug: v2ctx_mxene
+    reason: TEMP — see ti3c2tx_mxene.

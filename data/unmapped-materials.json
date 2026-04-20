@@ -31,18 +31,6 @@
     {
       "slug": "ceramic_separator",
       "reason": "Composition varies (Al2O3, MgO, clay-based). Leaving unmapped in v0.1 to avoid misleading users who assume a single proxy covers all ceramic separators. Revisit in v0.2 if MESS-Parameters splits by composition."
-    },
-    {
-      "slug": "ti3c2tx_mxene",
-      "reason": "TEMP \u2014 MP MXene coverage needs verification before tagging v0.1.0-pilot. Promote to `materials` with correct mp_id."
-    },
-    {
-      "slug": "nb2ctx_mxene",
-      "reason": "TEMP \u2014 see ti3c2tx_mxene."
-    },
-    {
-      "slug": "v2ctx_mxene",
-      "reason": "TEMP \u2014 see ti3c2tx_mxene."
     }
   ]
 }

@@ -42,10 +42,16 @@ materials:
 
   - slug: stainless_steel
     components:
-      - mp_id: mp-13           # Fe (bcc) — iron is the dominant element
+      - mp_id: mp-13           # Fe (bcc) — bulk chemistry dominant element
         role: bulk_structure
         proxy: true
-    notes: Stainless is an Fe-Cr-Ni alloy; MP has no alloy composition exactly matching common SS grades (304, 316). Using Fe with passivator override captures the practical corrosion behavior. Refine with specific alloys in v0.2+.
+      - mp_id: mp-90           # Cr (bcc) — passivator, 18% in SS-304/316
+        role: dopant
+        loading: "18 wt%"
+      - mp_id: mp-23           # Ni (fcc) — passivator, 8-10% in SS-304/316
+        role: dopant
+        loading: "10 wt%"
+    notes: "v0.2 refinement: explicit Cr and Ni dopant components trigger the kinetic-stability override correctly (Fe-alone would false-flag as corroding). MP has no canonical SS-304 or SS-316 alloy structure at exact composition; multi-component proxy is the cleanest available representation. Aggregated Tier 1 scalars are weighted by nominal loading."
 
   # -- Transition metal oxide cathodes --
   - slug: manganese_oxide
@@ -125,11 +131,28 @@ materials:
         proxy: true
     notes: Typically carbon cloth + PTFE binder. Carbon-side chemistry only.
 
-  # -- MXenes (placeholders — mp_id lookup needed) --
-  # TODO: verify MP IDs for Ti3C2, Nb2C, V2C MAX/MXene phases before v0.1.0-pilot tag.
-  # MP has many MAX-phase entries; the actual MXene (etched) structures are less
-  # well-covered. If a Ti3C2 entry with appropriate stoichiometry isn't present,
-  # move these to `unmapped` and seek MXene-specific upstream data sources.
+  # -- MXenes (v0.2 lookup completed; all 3 have MP entries, all as proxies) --
+  - slug: ti3c2tx_mxene
+    components:
+      - mp_id: mp-1094034     # Ti3C2 hexagonal (theoretical in MP, above_hull=0.051)
+        role: bulk_structure
+        proxy: true
+    confidence_tier_override: low
+    notes: "MP Ti3C2 entry is theoretical, not experimentally confirmed; real Ti3C2Tx MXene has disordered surface terminations (-OH, -F, -O) that crystalline DFT cannot capture. MAX-phase parent Ti3AlC2 (mp-3747) is experimentally ground-state and could serve as an alternative anchor for bulk-chemistry reasoning; not used here to avoid conflating MAX and MXene."
+
+  - slug: nb2ctx_mxene
+    components:
+      - mp_id: mp-569989      # Nb2C orthorhombic, experimental ground state
+        role: bulk_structure
+        proxy: true
+    notes: "Nb2C bulk carbide experimental structure used as proxy. Real etched MXene Nb2CTx has layered morphology + Tx termination not in DFT. MAX-phase parent Nb2AlC (mp-996162) also experimentally ground-state."
+
+  - slug: v2ctx_mxene
+    components:
+      - mp_id: mp-20648       # V2C orthorhombic, experimental ground state
+        role: bulk_structure
+        proxy: true
+    notes: "V2C bulk carbide experimental structure used as proxy. Same caveats as nb2ctx_mxene. MAX-phase parent V2AlC (mp-1025497) also experimental."
 
 unmapped:
   # -- Polymer electrolytes / membranes: no crystalline MP analog --
@@ -159,12 +182,3 @@ unmapped:
   - slug: ceramic_separator
     reason: Composition varies (Al2O3, MgO, clay-based). Leaving unmapped in v0.1 to avoid misleading users who assume a single proxy covers all ceramic separators. Revisit in v0.2 if MESS-Parameters splits by composition.
 
-  # -- MXenes (temporary — move to `materials` once mp_id is verified) --
-  - slug: ti3c2tx_mxene
-    reason: TEMP — MP MXene coverage needs verification before tagging v0.1.0-pilot. Promote to `materials` with correct mp_id.
-
-  - slug: nb2ctx_mxene
-    reason: TEMP — see ti3c2tx_mxene.
-
-  - slug: v2ctx_mxene
-    reason: TEMP — see ti3c2tx_mxene.

@@ -23,6 +23,30 @@
     "Zr"
   ],
   "materials": {
+    "mp-1094034": {
+      "elements": [],
+      "error": "ValueError: Composition of stability entry does not match Pourbaix Diagram",
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mfc_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mec_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        }
+      }
+    },
     "mp-126": {
       "elements": [
         "Pt"
@@ -56,19 +80,19 @@
         "mfc_anode": {
           "state": "corroding",
           "stable_phase": "FeOH[+1]",
-          "decomposition_energy_eV": 0.7737623960257647,
+          "decomposition_energy_eV": 0.3102127717309164,
           "notes": "decomposes toward FeOH[+1]"
         },
         "mfc_cathode": {
           "state": "corroding",
           "stable_phase": "Fe2O3",
-          "decomposition_energy_eV": 0.5778962691666675,
+          "decomposition_energy_eV": 0.27517341949999974,
           "notes": "decomposes toward Fe2O3"
         },
         "mec_cathode": {
           "state": "corroding",
           "stable_phase": "Fe",
-          "decomposition_energy_eV": 1.1291356416666674,
+          "decomposition_energy_eV": 0.5766606664999995,
           "notes": "decomposes toward Fe"
         }
       }
@@ -151,6 +175,30 @@
         }
       }
     },
+    "mp-20648": {
+      "elements": [],
+      "error": "ValueError: Composition of stability entry does not match Pourbaix Diagram",
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mfc_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mec_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        }
+      }
+    },
     "mp-23": {
       "elements": [
         "Ni"
@@ -223,6 +271,55 @@
           "stable_phase": "CH4(aq)",
           "decomposition_energy_eV": 2.4582172531296433,
           "notes": "kinetic-stability override (C: kinetic inertness (CH4/HCO3- reaction rate \u2248 0 at MES temperatures)); thermodynamic Pourbaix says corroding toward CH4(aq)"
+        }
+      }
+    },
+    "mp-569989": {
+      "elements": [],
+      "error": "ValueError: Composition of stability entry does not match Pourbaix Diagram",
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mfc_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mec_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        }
+      }
+    },
+    "mp-90": {
+      "elements": [
+        "Cr"
+      ],
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "passivated",
+          "stable_phase": "Cr2O3",
+          "decomposition_energy_eV": 2.0950229225000014,
+          "notes": "kinetic-stability override (Cr: aqueous Cr2O3 passivation layer); thermodynamic Pourbaix says corroding toward Cr2O3"
+        },
+        "mfc_cathode": {
+          "state": "passivated",
+          "stable_phase": "Cr2O3",
+          "decomposition_energy_eV": 3.5950229225000014,
+          "notes": "kinetic-stability override (Cr: aqueous Cr2O3 passivation layer); thermodynamic Pourbaix says corroding toward Cr2O3"
+        },
+        "mec_cathode": {
+          "state": "passivated",
+          "stable_phase": "Cr2O3",
+          "decomposition_energy_eV": 0.8950229225000017,
+          "notes": "kinetic-stability override (Cr: aqueous Cr2O3 passivation layer); thermodynamic Pourbaix says corroding toward Cr2O3"
         }
       }
     }

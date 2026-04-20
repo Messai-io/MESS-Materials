@@ -232,7 +232,28 @@ def main() -> None:
     with MPRester(api_key) as mpr:
         for mp_id in mp_ids:
             print(f"[compute-pourbaix] {mp_id}  ...")
-            material_result = compute_for_material(mpr, mp_id)
+            try:
+                material_result = compute_for_material(mpr, mp_id)
+            except Exception as exc:  # noqa: BLE001
+                # A failed Pourbaix computation is a real caveat (MP
+                # lacks ion references, composition mismatch, etc.)
+                # but shouldn't stop the batch. Record the failure.
+                print(f"[compute-pourbaix] {mp_id}  FAIL  {type(exc).__name__}: {exc}")
+                material_result = {
+                    mp_id: {
+                        "elements": [],
+                        "error": f"{type(exc).__name__}: {exc}",
+                        "pourbaix": {
+                            cond: {
+                                "state": "unknown",
+                                "stable_phase": None,
+                                "decomposition_energy_eV": None,
+                                "notes": f"Pourbaix computation failed: {type(exc).__name__}",
+                            }
+                            for cond in MES_CONDITIONS
+                        },
+                    }
+                }
             results["materials"].update(material_result)
 
     OUTPUT_PATH.write_text(json.dumps(results, indent=2) + "\n", encoding="utf-8")

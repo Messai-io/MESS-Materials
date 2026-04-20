@@ -1,6 +1,6 @@
 # MESS-Materials — Scientific Integrity
 
-_Version: v0.1.0-pilot. Sibling to
+_Version: v0.2.0-pilot. Sibling to
 `open-source/MESS-Parameters/data/SCIENTIFIC_INTEGRITY.md`. Where that
 document covers extraction-quality caveats for literature-extracted
 values, this one covers the DFT-computation caveats for the MP-derived
@@ -183,5 +183,153 @@ functional per field.
    the MESS-Parameters extraction corpus is planned.
 4. That synthesizability is implied by thermodynamic stability. MP
    structures with `theoretical: true` have never been experimentally
-   reported. None of the v0.1.0-pilot mappings use theoretical-only
-   MP entries.
+   reported. The v0.1.0-pilot mappings used no theoretical-only
+   entries; v0.2 adds one (`ti3c2tx_mxene → mp-1094034`, theoretical
+   Ti3C2) with confidence_tier forced to `low` and the caveat
+   surfaced in the record's `notes`.
+
+---
+
+## v0.2 additions (2026-04-20)
+
+### Coverage expansion: 15 → 18 mapped slugs
+
+v0.2 resolves the three TEMP-unmapped MXenes by mapping them to real
+MP carbide structures as proxies:
+
+- `ti3c2tx_mxene → mp-1094034` (Ti3C2 hexagonal, **theoretical**,
+  above_hull=0.051 eV/atom). Real Ti3C2Tx MXene has disordered surface
+  terminations (-OH, -F, -O) that crystalline DFT cannot capture.
+  Flagged `confidence_tier: low`.
+- `nb2ctx_mxene → mp-569989` (Nb2C orthorhombic, experimental ground
+  state). Bulk carbide as proxy; etched MXene has layered morphology
+  + Tx termination not represented.
+- `v2ctx_mxene → mp-20648` (V2C orthorhombic, experimental). Same
+  Tx caveat as Nb2C.
+
+Remaining 8 unmapped slugs are polymer electrolytes, composite
+descriptors, and one ceramic with composition ambiguity — all covered
+in `data/unmapped-materials.json` with reasons.
+
+### Pourbaix coverage for carbides
+
+MP's Pourbaix diagram infrastructure throws
+`ValueError: Composition of stability entry does not match Pourbaix
+Diagram` for Ti3C2, Nb2C, V2C. The error reflects MP's coverage gap
+for these chemsyses in the aqueous ion reference database, not a bug
+in the pipeline. Records for all three MXenes carry
+`state: "unknown"` at every MES operating point with an explicit
+`notes` field stating the computation failed. Experimental MES
+literature on MXene electrode stability is mixed — an "unknown" label
+is the most honest representation of what the DFT pipeline can
+conclude, absent independent experimental validation.
+
+### Stainless-steel composite refinement
+
+v0.1 mapped `stainless_steel` to mp-13 (Fe) alone with
+`proxy: true`. That gave a defensible chemistry floor but
+false-flagged "corroding" at every MES condition, because the
+compute-pourbaix step's passivator override only sees the primary
+component's elements (Fe) and not the alloy's Cr + Ni content.
+
+v0.2 upgrades the mapping to a multi-component composite:
+- `mp-13` (Fe, bulk_structure, proxy)
+- `mp-90` (Cr, dopant, loading="18 wt%")
+- `mp-23` (Ni, dopant, loading="10 wt%")
+
+Plus a **composite passivator override** in the assembler that
+re-checks `state == "corroding"` against the full component-element
+set. The override upgrades to `passivated` with an explicit note
+naming which passivators (Cr + Ni in this case) justify the
+upgrade. See `scripts/assemble-rich-json.py:apply_composite_passivator_override`.
+
+This is still a proxy, not a proper alloy DFT calculation. MP has no
+canonical SS-304 or SS-316 structure at exact composition. Real
+stainless also has trace C, Mn, Si, Mo (for SS-316) — not
+represented. Consumers should still show "proxy" and "low-to-medium
+confidence" treatment for stainless-steel entries.
+
+### Tier 2 DFT fields (new)
+
+**Elasticity** (from MP `elasticity` collection):
+- `bulk_modulus_GPa`, `shear_modulus_GPa`, `youngs_modulus_GPa`,
+  `poissons_ratio`, `universal_anisotropy`, `debye_temperature_K`.
+- MP coverage: ~13k of 150k materials. For our 10 unique primary
+  mp_ids, 7 have elasticity data; 3 miss (Co3O4, Fe3O4, MnO2 —
+  transition-metal oxides are a known coverage gap).
+- Downstream utility: bulk modulus < 50 GPa is a fragility flag for
+  high-flow MES reactors. Pt (K=248), Fe (K=207), Ni (K=174), Nb2C
+  (K=227), V2C (K=244) all qualify as "high durability"; graphite
+  (K=116) is borderline.
+- `youngs_modulus_GPa` is derived via E = 9KG/(3K+G) when MP doesn't
+  surface it directly (common for the v0.2 dataset).
+- All values from PBE GGA functional unless noted; r2SCAN migration
+  for transition metal oxides is v0.3+ scope.
+
+**Surface properties** (from MP `surface_properties` collection):
+- `weighted_surface_energy_J_per_m2`, `work_function_eV`,
+  `surface_anisotropy`, `shape_factor`, `has_reconstructed`.
+- MP coverage: ~1k materials — same 3/10 oxide gap as elasticity,
+  plus both MXenes (MP surface_properties does not cover the carbide
+  phases). Net: 6/10 primary mp_ids have surface data.
+- Pt work function = 5.54 eV matches the ~5.5-5.7 eV experimental
+  ORR benchmark — confirms the data source is aligned with literature.
+- Graphite surface energy = 0.019 J/m² reflects the basal plane; edge
+  sites (which actually dominate real biofilm electrode chemistry)
+  are not represented in a bulk crystal calculation. Amorphous-carbon
+  proxy caveat compounds here.
+- Surface energies from MP are facet-area-weighted averages. Per-facet
+  detail is available in the raw cache under
+  `data/mp-cache-surfaces/<mp_id>.json` (`surfaces` array) for
+  consumers that need it; v0.2 schema exposes the weighted scalar only.
+
+### Material ↔ paper cross-reference (novel MES capability)
+
+The single most important v0.2 addition and the one no other
+materials database can offer. For each mapped slug, joins the
+MESS-Parameters corpus (`paper-metadata.csv`, ~23k papers) via the
+`anode_materials` and `cathode_materials` columns.
+
+**Coverage result:** 13 of 15 original v0.1 slugs have ≥1 paper; 11
+of 15 have ≥3 papers. Exceeds the v0.2 plan's ≥70% exit threshold
+(actual: 87%). Top coverage: `nickel_foam` (728), `iron_oxide` (556),
+`copper_cathode` (390), `platinum_cathode` (303). Zero-paper slugs:
+`cobalt_oxide` and `gas_diffusion_layer` — upstream extraction gap,
+not an alias gap.
+
+**Alias table caveats** (full table in
+`scripts/build-paper-crossref.py`):
+- The MESS-Parameters corpus has inconsistent raw strings ("Pt",
+  "platinum", "['Pt']", "Pt/C"). Aliases are hand-curated; every
+  non-trivial mapping decision is documented inline in the script.
+- Ambiguous strings are intentionally **not** mapped. "carbon" (222
+  occurrences) is the largest omission — could be carbon cloth,
+  felt, paper, brush, or other. Mapping it to any single slug would
+  silently inflate that slug's paper count. Better to leave it
+  counted as unmapped and surface the gap to upstream curators.
+- "graphite" (43) is mapped to `graphite_brush` as the only
+  crystalline-graphite-based slug; reviewers can correct later if
+  this proves wrong.
+
+**Performance distributions** (power_output, efficiency) are emitted
+only when ≥3 papers report the metric. Smaller samples return raw
+values without a median (too few for a stable central-tendency
+estimate; this mirrors the CoV discipline from MESS-Parameters'
+own integrity doc).
+
+**What this does and does not prove:** the cross-reference surfaces
+which materials the MES literature has actually tested, and the
+distribution of reported performance. It does **not** validate the
+DFT predictions — a material with high paper count and good median
+power does not retroactively justify its MESS-Materials scores.
+Those are orthogonal signals. Consumers that want to validate DFT
+predictions against experiment need a proper held-out comparison
+study, not the corpus averages.
+
+### Schema bump (0.1.0 → 0.2.0)
+
+Additive only. Every v0.1.0 field remains unchanged. New optional
+fields per material record: `elasticity`, `surface`,
+`paper_cross_reference`. All nullable. Consumers pinned to v0.1.0
+continue to work against older data; consumers bumping to v0.2.0
+opt into the new fields with no required migration.

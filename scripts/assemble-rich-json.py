@@ -53,6 +53,13 @@ SURFACES_CACHE = DATA_DIR / "mp-cache-surfaces"
 
 SCHEMA_VERSION = "0.2.0"
 
+# Mirror of PASSIVATORS in compute-pourbaix.py. Kept here separately
+# because this post-pass applies to the aggregate-component view (dopants
+# etc.), whereas compute-pourbaix.py only sees the primary component's
+# elements list. When a composite carries a passivator as a dopant
+# (e.g. stainless_steel: Fe-Cr-Ni), upgrade the verdict here.
+COMPOSITE_PASSIVATORS: set[str] = {"Ti", "Al", "Cr", "Ni", "Ta", "Zr", "C"}
+
 
 def get_mess_parameters_tag() -> str | None:
     """Read the pinned tag from the sibling MESS-Parameters checkout."""
@@ -127,6 +134,47 @@ def build_elasticity_block(mp_id: str) -> dict | None:
         "debye_temperature_K": raw.get("debye_temperature"),
         "source_functional": "PBE",
     }
+
+
+def apply_composite_passivator_override(
+    pourbaix: dict, component_formulas: list[str]
+) -> dict:
+    """
+    compute-pourbaix.py only sees the primary component's elements. For
+    composites with passivator dopants (e.g. stainless_steel = Fe + Cr
+    + Ni), re-check and upgrade 'corroding' → 'passivated' here.
+    """
+    # Collect element symbols across all component formulas
+    elements: set[str] = set()
+    for formula in component_formulas:
+        if not formula:
+            continue
+        # Simple element extraction: runs of uppercase+lowercase
+        import re as _re
+
+        for m in _re.finditer(r"[A-Z][a-z]?", formula):
+            elements.add(m.group())
+
+    passivators_present = elements & COMPOSITE_PASSIVATORS
+    if not passivators_present:
+        return pourbaix
+
+    upgraded = {}
+    for cond, result in pourbaix.items():
+        if result.get("state") == "corroding":
+            upgraded[cond] = {
+                **result,
+                "state": "passivated",
+                "notes": (
+                    f"composite passivator override "
+                    f"({','.join(sorted(passivators_present))} present as alloy components); "
+                    f"thermodynamic Pourbaix on the bulk component says corroding toward "
+                    f"{result.get('stable_phase')}"
+                ),
+            }
+        else:
+            upgraded[cond] = result
+    return upgraded
 
 
 def build_paper_xref_block(slug: str, crossref_all: dict) -> dict | None:
@@ -275,6 +323,11 @@ def assemble_material(entry: dict, pourbaix_all: dict, crossref_all: dict) -> di
             "mfc_cathode": {"state": "unknown", "stable_phase": None, "decomposition_energy_eV": None, "notes": "Pourbaix not yet computed for primary component"},
             "mec_cathode": {"state": "unknown", "stable_phase": None, "decomposition_energy_eV": None, "notes": "Pourbaix not yet computed for primary component"},
         }
+    # Apply composite-level passivator override (sees all component
+    # formulas, not just the primary component's elements).
+    pourbaix_entry = apply_composite_passivator_override(
+        pourbaix_entry, [c.get("formula") for c in resolved_components]
+    )
 
     # Assign confidence tier
     tier = entry.get("confidence_tier_override")

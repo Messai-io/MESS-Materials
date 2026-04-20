@@ -1,6 +1,6 @@
 {
   "schema_version": "0.2.0",
-  "generated_at": "2026-04-20T04:26:52.789649+00:00",
+  "generated_at": "2026-04-20T04:32:23.912328+00:00",
   "mess_parameters_tag": "sha:0aaca53",
   "materials": [
     {
@@ -246,6 +246,20 @@
           "loading": null,
           "proxy": true,
           "formula": "Fe"
+        },
+        {
+          "mp_id": "mp-90",
+          "role": "dopant",
+          "loading": "18 wt%",
+          "proxy": false,
+          "formula": "Cr"
+        },
+        {
+          "mp_id": "mp-23",
+          "role": "dopant",
+          "loading": "10 wt%",
+          "proxy": false,
+          "formula": "Ni"
         }
       ],
       "confidence_tier": "low",
@@ -255,26 +269,26 @@
       "is_metal": true,
       "formation_energy_eV_per_atom": 0.0,
       "energy_above_hull_eV_per_atom": 0.0,
-      "density_g_per_cm3": 7.902858241785766,
-      "total_magnetization_uB": 5.289892,
+      "density_g_per_cm3": 7.827781287780303,
+      "total_magnetization_uB": 4.18798844375,
       "pourbaix": {
         "mfc_anode": {
-          "state": "corroding",
+          "state": "passivated",
           "stable_phase": "FeOH[+1]",
-          "decomposition_energy_eV": 0.7737623960257647,
-          "notes": "decomposes toward FeOH[+1]"
+          "decomposition_energy_eV": 0.3102127717309164,
+          "notes": "composite passivator override (Cr,Ni present as alloy components); thermodynamic Pourbaix on the bulk component says corroding toward FeOH[+1]"
         },
         "mfc_cathode": {
-          "state": "corroding",
+          "state": "passivated",
           "stable_phase": "Fe2O3",
-          "decomposition_energy_eV": 0.5778962691666675,
-          "notes": "decomposes toward Fe2O3"
+          "decomposition_energy_eV": 0.27517341949999974,
+          "notes": "composite passivator override (Cr,Ni present as alloy components); thermodynamic Pourbaix on the bulk component says corroding toward Fe2O3"
         },
         "mec_cathode": {
-          "state": "corroding",
+          "state": "passivated",
           "stable_phase": "Fe",
-          "decomposition_energy_eV": 1.1291356416666674,
-          "notes": "decomposes toward Fe"
+          "decomposition_energy_eV": 0.5766606664999995,
+          "notes": "composite passivator override (Cr,Ni present as alloy components); thermodynamic Pourbaix on the bulk component says corroding toward Fe"
         }
       },
       "structure_cif": "# generated using pymatgen\ndata_Fe\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   2.47781303\n_cell_length_b   2.47780913\n_cell_length_c   4.05429521\n_cell_angle_alpha   90.00003845\n_cell_angle_beta   90.00031951\n_cell_angle_gamma   109.46983668\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Fe\n_chemical_formula_sum   Fe2\n_cell_volume   23.46816847\n_cell_formula_units_Z   2\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Fe  Fe0  1  0.50000002  0.50000008  0.49999999  1\n  Fe  Fe1  1  0.99999998  0.99999992  0.00000001  1\n",
@@ -311,7 +325,7 @@
         "efficiency_median_pct": null,
         "efficiency_n": 0
       },
-      "notes": "Stainless is an Fe-Cr-Ni alloy; MP has no alloy composition exactly matching common SS grades (304, 316). Using Fe with passivator override captures the practical corrosion behavior. Refine with specific alloys in v0.2+."
+      "notes": "v0.2 refinement: explicit Cr and Ni dopant components trigger the kinetic-stability override correctly (Fe-alone would false-flag as corroding). MP has no canonical SS-304 or SS-316 alloy structure at exact composition; multi-component proxy is the cleanest available representation. Aggregated Tier 1 scalars are weighted by nominal loading."
     },
     {
       "slug": "manganese_oxide",
@@ -1076,6 +1090,160 @@
       },
       "paper_cross_reference": null,
       "notes": "Typically carbon cloth + PTFE binder. Carbon-side chemistry only."
+    },
+    {
+      "slug": "ti3c2tx_mxene",
+      "components": [
+        {
+          "mp_id": "mp-1094034",
+          "role": "bulk_structure",
+          "loading": null,
+          "proxy": true,
+          "formula": "Ti3C2"
+        }
+      ],
+      "confidence_tier": "low",
+      "mp_snapshot_date": "2026-04-20",
+      "mp_functional_default": "PBE",
+      "band_gap_eV": 0.0,
+      "is_metal": true,
+      "formation_energy_eV_per_atom": -0.7959923699999991,
+      "energy_above_hull_eV_per_atom": 0.050928757333334004,
+      "density_g_per_cm3": 4.521629297630674,
+      "total_magnetization_uB": 7e-07,
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mfc_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mec_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        }
+      },
+      "structure_cif": "# generated using pymatgen\ndata_Ti3C2\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   3.06660463\n_cell_length_b   3.06660463\n_cell_length_c   15.11715007\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   119.99998555\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Ti3C2\n_chemical_formula_sum   'Ti6 C4'\n_cell_volume   123.11648095\n_cell_formula_units_Z   2\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Ti  Ti0  1  0.66666700  0.33333300  0.34387771  1\n  Ti  Ti1  1  0.33333300  0.66666700  0.84388220  1\n  Ti  Ti2  1  0.33333300  0.66666700  0.65612229  1\n  Ti  Ti3  1  0.66666700  0.33333300  0.15611780  1\n  Ti  Ti4  1  0.00000000  -0.00000000  0.50000000  1\n  Ti  Ti5  1  0.00000000  -0.00000000  -0.00000000  1\n  C  C6  1  0.33333300  0.66666700  0.41410376  1\n  C  C7  1  0.66666700  0.33333300  0.91409085  1\n  C  C8  1  0.33333300  0.66666700  0.08590915  1\n  C  C9  1  0.66666700  0.33333300  0.58589624  1\n",
+      "elasticity": null,
+      "surface": null,
+      "paper_cross_reference": null,
+      "notes": "MP Ti3C2 entry is theoretical, not experimentally confirmed; real Ti3C2Tx MXene has disordered surface terminations (-OH, -F, -O) that crystalline DFT cannot capture. MAX-phase parent Ti3AlC2 (mp-3747) is experimentally ground-state and could serve as an alternative anchor for bulk-chemistry reasoning; not used here to avoid conflating MAX and MXene."
+    },
+    {
+      "slug": "nb2ctx_mxene",
+      "components": [
+        {
+          "mp_id": "mp-569989",
+          "role": "bulk_structure",
+          "loading": null,
+          "proxy": true,
+          "formula": "Nb2C"
+        }
+      ],
+      "confidence_tier": "low",
+      "mp_snapshot_date": "2026-04-20",
+      "mp_functional_default": "PBE",
+      "band_gap_eV": 0.0,
+      "is_metal": true,
+      "formation_energy_eV_per_atom": -0.536157559999999,
+      "energy_above_hull_eV_per_atom": 0.0,
+      "density_g_per_cm3": 7.678055954336023,
+      "total_magnetization_uB": 0.0,
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mfc_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mec_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        }
+      },
+      "structure_cif": "# generated using pymatgen\ndata_Nb2C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   3.10629662\n_cell_length_b   4.99225010\n_cell_length_c   11.03561018\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   Nb2C\n_chemical_formula_sum   'Nb8 C4'\n_cell_volume   171.13372738\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  Nb  Nb0  1  0.00000000  0.73353342  0.29697368  1\n  Nb  Nb1  1  0.50000000  0.26646658  0.70302632  1\n  Nb  Nb2  1  0.50000000  0.75361555  0.54628470  1\n  Nb  Nb3  1  -0.00000000  0.76646658  0.79697368  1\n  Nb  Nb4  1  0.50000000  0.74638445  0.04628470  1\n  Nb  Nb5  1  -0.00000000  0.24638445  0.45371530  1\n  Nb  Nb6  1  0.00000000  0.25361555  0.95371530  1\n  Nb  Nb7  1  0.50000000  0.23353342  0.20302632  1\n  C  C8  1  0.50000000  0.98958535  0.37553962  1\n  C  C9  1  0.00000000  0.01041465  0.62446038  1\n  C  C10  1  0.50000000  0.51041465  0.87553962  1\n  C  C11  1  -0.00000000  0.48958535  0.12446038  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 226.573,
+        "shear_modulus_GPa": 118.704,
+        "youngs_modulus_GPa": 303.16773505773256,
+        "poissons_ratio": 0.277,
+        "universal_anisotropy": 0.251,
+        "debye_temperature_K": 537.7332840440422,
+        "source_functional": "PBE"
+      },
+      "surface": null,
+      "paper_cross_reference": null,
+      "notes": "Nb2C bulk carbide experimental structure used as proxy. Real etched MXene Nb2CTx has layered morphology + Tx termination not in DFT. MAX-phase parent Nb2AlC (mp-996162) also experimentally ground-state."
+    },
+    {
+      "slug": "v2ctx_mxene",
+      "components": [
+        {
+          "mp_id": "mp-20648",
+          "role": "bulk_structure",
+          "loading": null,
+          "proxy": true,
+          "formula": "V2C"
+        }
+      ],
+      "confidence_tier": "low",
+      "mp_snapshot_date": "2026-04-20",
+      "mp_functional_default": "PBE",
+      "band_gap_eV": 0.0,
+      "is_metal": true,
+      "formation_energy_eV_per_atom": -0.5392330508333341,
+      "energy_above_hull_eV_per_atom": 0.0,
+      "density_g_per_cm3": 5.8158693048957,
+      "total_magnetization_uB": 1e-07,
+      "pourbaix": {
+        "mfc_anode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mfc_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        },
+        "mec_cathode": {
+          "state": "unknown",
+          "stable_phase": null,
+          "decomposition_energy_eV": null,
+          "notes": "Pourbaix computation failed: ValueError"
+        }
+      },
+      "structure_cif": "# generated using pymatgen\ndata_V2C\n_symmetry_space_group_name_H-M   'P 1'\n_cell_length_a   4.51065740\n_cell_length_b   5.01469382\n_cell_length_c   5.75055668\n_cell_angle_alpha   90.00000000\n_cell_angle_beta   90.00000000\n_cell_angle_gamma   90.00000000\n_symmetry_Int_Tables_number   1\n_chemical_formula_structural   V2C\n_chemical_formula_sum   'V8 C4'\n_cell_volume   130.07509514\n_cell_formula_units_Z   4\nloop_\n _symmetry_equiv_pos_site_id\n _symmetry_equiv_pos_as_xyz\n  1  'x, y, z'\nloop_\n _atom_site_type_symbol\n _atom_site_label\n _atom_site_symmetry_multiplicity\n _atom_site_fract_x\n _atom_site_fract_y\n _atom_site_fract_z\n _atom_site_occupancy\n  V  V0  1  0.24208699  0.07555798  0.11672783  1\n  V  V1  1  0.74208699  0.92444202  0.38327217  1\n  V  V2  1  0.25791301  0.57555798  0.38327217  1\n  V  V3  1  0.75791301  0.42444202  0.11672783  1\n  V  V4  1  0.24208699  0.57555798  0.88327217  1\n  V  V5  1  0.74208699  0.42444202  0.61672783  1\n  V  V6  1  0.25791301  0.07555798  0.61672783  1\n  V  V7  1  0.75791301  0.92444202  0.88327217  1\n  C  C8  1  0.50000000  0.75000000  0.12556023  1\n  C  C9  1  -0.00000000  0.25000000  0.37443977  1\n  C  C10  1  0.50000000  0.25000000  0.87443977  1\n  C  C11  1  -0.00000000  0.75000000  0.62556023  1\n",
+      "elasticity": {
+        "bulk_modulus_GPa": 244.406,
+        "shear_modulus_GPa": 119.66,
+        "youngs_modulus_GPa": 308.61459392785366,
+        "poissons_ratio": 0.29,
+        "universal_anisotropy": 0.139,
+        "debye_temperature_K": 681.9969749206483,
+        "source_functional": "PBE"
+      },
+      "surface": null,
+      "paper_cross_reference": null,
+      "notes": "V2C bulk carbide experimental structure used as proxy. Same caveats as nb2ctx_mxene. MAX-phase parent V2AlC (mp-1025497) also experimental."
     }
   ]
 }
